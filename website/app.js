@@ -1,13 +1,21 @@
 var app = require('express')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
+var bodyParser = require('body-parser');
+
+var port = process.env.PORT || 8080; 
 
 var sequence = 1;
 var clients = [];
 
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
 app.get('/', function(req, res){
   res.sendFile(__dirname + '/public/index.html');
 });
+
+app.use('/api', require('./controllers'));
 
 //io.on('connection', function(socket){
 //  socket.on('chat message', function(msg){
@@ -35,14 +43,14 @@ io.on('connection', function(socket) {
 });
 
 // Every 1 second, sends a message to a random client:
-setInterval(function() {
-    var randomClient;
-    if (clients.length > 0) {
-        randomClient = Math.floor(Math.random() * clients.length);
-        clients[randomClient].emit('foo', sequence++);
-    }
-}, 1000);
+// setInterval(function() {
+//     var randomClient;
+//     if (clients.length > 0) {
+//         randomClient = Math.floor(Math.random() * clients.length);
+//         clients[randomClient].emit('foo', sequence++);
+//     }
+// }, 1000);
 
-http.listen(3000, function(){
-  console.log('listening on *:3000');
+http.listen(port, function(){
+  console.log('listening on *:' + port);
 });
