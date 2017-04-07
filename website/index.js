@@ -6,7 +6,7 @@ var sequence = 1;
 var clients = [];
 
 app.get('/', function(req, res){
-  res.sendFile(__dirname + '/index.html');
+  res.sendFile(__dirname + '/public/index.html');
 });
 
 //io.on('connection', function(socket){
@@ -16,8 +16,8 @@ app.get('/', function(req, res){
 //});
 
 io.on('connection', function(socket) {
-    socket.name = "blah";
-    console.info('New client connected (id=' + socket.id + ', name=' + socket.name + ').');
+    //socket.name = "blah";
+    console.info('New client connected (id=' + socket.id + ').');
     clients.push(socket);
 
     socket.on('chat message', function(msg){
