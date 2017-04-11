@@ -12,6 +12,7 @@ module.exports = function (alexaPasscodes, vsocketio) {
             var socket = vsocketio.GetSocket(req.body.socketid);
             if(socket) {
                 alexaPasscodes.LinkSocket(clientId, socket);
+                socket.emit('chat message', 'account linked: ' + clientId);
                 res.send( { alexaClientId: clientId });
                 return;
             }
