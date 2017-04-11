@@ -4,7 +4,7 @@ Install [awscli](http://docs.aws.amazon.com/cli/latest/userguide/installing.html
 
 Note if installing on windows that the latest version of python is incompatible with awscli, be sure to use the version in the article.
 
-To deploy this website run `eb deploy`. See the `config.yml` file in `/website/.elacticbeanstalk` for config details.
+To deploy this website run `eb deploy`. See the `config.yml` file in `/website/.elasticbeanstalk` for config details.
 
 ### To create a new Elastic Beanstalk site using `eb`:
 
