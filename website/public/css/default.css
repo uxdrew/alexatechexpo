@@ -1,17 +1,80 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-size: 12px;
     letter-spacing: .5px;
     background-color: #444;
+    color: #fff;
 }
 
-form {
+h1 {
+    font-size: 44px;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 18px;
+    color: #F0CA4D;
+    line-height: .5px;
+}
+
+.btn-outline {
+    color: #fff;
+    background-color: transparent;
+}
+
+.btn-outline:hover {
+    color: #555;
+    background-color: #F0CA4D;
+    border: 2px solid #555;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 400;
+    width: 250px;
+    height: 44px;
+    text-transform: uppercase;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 2px solid #fff;
+    border-radius: 0;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 44px;
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+/*form {
     background-color: #555;
     padding: 12px;
     position: fixed;
@@ -31,7 +94,7 @@ form button {
     background: rgb(130, 224, 255);
     border: none;
     padding: 10px;
-}
+}*/
 
 #messages {
     list-style-type: none;

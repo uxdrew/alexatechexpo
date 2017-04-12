@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Alexa Tech Expo Web Demo - Place Bid</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/default.css" type="text/css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background-color: #DE5B49;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4" style="padding-top: 50px; padding-left: 50px; padding-right: 50px">
+                <form>
+
+                       <div class="col-md-12 text-center">
+                        <h1>Yikes! You have been outbid!</h1>
+                        <br>
+                    </div>
+
+                    <div class="col-md-12 text-center">
+                        <h4>Current Bid</h4>
+                        <h1>$200.00</h1>
+                    </div>
+                    <div class="form-group">
+                        <label for="text"></label>
+                        <input type="text" class="form-control" id="text">
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <button type="submit" class="btn btn-outline">Bid Again</button>
+                        <div>
+                </form>
+                </div>
+                </div>
+
+            </div>
+
+            <script src="/socket.io/socket.io.js"></script>
+            <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+                crossorigin="anonymous"></script>
+            <script>
+                $(function () {
+                    var socket = io();
+                    $('form').submit(function () {
+                        //console.log(socket.id);
+                        socket.emit('chat message', $('#m').val());
+                        $('#m').val('');
+                        return false;
+                    });
+                    socket.on('chat message', function (msg) {
+                        $('#messages').append($('<li>').text(msg));
+                    });
+                    socket.on('foo', function (msg) {
+                        //console.info(msg);
+                        $('#messages').append($('<li>').text(msg));
+                    });
+                    socket.on('connect', function () {
+                        console.log("Web Socket Connected - socketid: " + socket.id);
+                    });
+                });
+            </script>
+</body>
+
+</html>
