@@ -1,8 +1,11 @@
 var app = require('express')();
+var path = require('path') // trying to figure out how to serve static files in express 
 var http = require('http').Server(app);
 var alexaPasscodes = require('./helpers/alexapasscodes.js');
 var vsocketio = require('./socketio/vsocketio.js')(http, alexaPasscodes);
 var bodyParser = require('body-parser');
+
+app.use(express.static(path.join(__dirname, 'public'))); // trying to figure out how to serve static files in express
 
 var port = process.env.PORT || 8080; 
 
