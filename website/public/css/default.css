@@ -63,12 +63,13 @@ h5 {
 }
 
 .btn-outline:hover, .btn-outline:focus {
-    color: yellow;
-    border: 2px solid #555;
+    color: #222;
+    border: 2px solid #222;
 }
 
 .btn-outline:active {
-    background-color: yellow;
+    border: 2px solid #F0CA4D;
+    color: #F0CA4D;
 }
 
 .btn-outline:disabled {
@@ -106,10 +107,11 @@ h5 {
     width: 100%;
     height: 50px;
     padding: 6px 12px;
-    font-size: 32px;
+    font-size: 40px;
+    font-weight: 700;
     line-height: 1.42857143;
     text-align: center;
-    color: #333;
+    color: #324D5C;
     background:rgba(255,255,255, 0.50);
     background-image: none;
     border: 0 solid rgba(255,255,255, 0.25);
@@ -119,7 +121,7 @@ h5 {
     -webkit-transition: none;
     -o-transition: none;
     transition: none;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
 }
 
 label {
