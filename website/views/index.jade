@@ -9,7 +9,12 @@ block content
       .container
         h2 #{jumbo-header}
 
+    
+        
+
     .row
+    p.text-center #{dictionary-of-words} 
+
       .col-md-4.col-md-offset-4(style='padding-top: 150px; padding-left: 50px; padding-right: 50px')
         form
           .col-md-12.text-center
@@ -23,9 +28,8 @@ block content
 
             .row
                 .text-center(style='padding-top: 100px;')
-                    <!-- span.circle-success #{success} something like that maybe? -->
                     span #{circle-success}
-                    h5 #{client_id} 
+                    h5 client_id #{client_id} 
 
     footer
       div(style='text-align:center')
