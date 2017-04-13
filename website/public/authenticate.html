@@ -9,40 +9,54 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/default.css" type="text/css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/ff53abf699.js"></script>
     <style>
         body {
-            background-color: #F0CA4D;
-            color: #4A4A4A;
+            background-color: #4A4A4A;
         }
-        </style>
+    </style>
 </head>
 
 <body>
 
-    <div class="container">
+    <div class="jumbotron text-center" style="background-color: #585858">
+        <div class="container">
+            <h2>Let Us Pair.</h2>
+        </div>
+    </div>
 
+    <div class="container">
         <div class="row">
             <div class="col-md-4 col-md-offset-4" style="padding-top: 250px; padding-left: 50px; padding-right: 50px">
                 <form>
 
                     <div class="col-md-12 text-center">
-                        <h4 style="color:#555">Passcode</h4>
+                        <h4></h4>
                         <h1></h1>
-                        <br>
-                        <p>Enter the 4 digit number Alexa provided below and then tap submit.</p>
                     </div>
                     <div class="form-group">
-                        <label for="text"></label>
-                        <input type="text" class="form-control" style="text-align:center" id="text" maxlength="4">
+                        <label for="text">Passcode</label>
+                        <input type="text" class="form-control" id="text" maxlength="4">
                     </div>
                     <div class="col-md-12 text-center">
-                        <button type="submit" class="btn btn-outline">Authenticate</button>
-                        <div>
+                        <button type="submit" id="register" value="register" disabled="disabled" class="btn btn-outline">Pair</button>
+                    </div>
                 </form>
-                </div>
-                </div>
-
             </div>
+        </div>
+    </div>
+        <div class="row">
+        <div class="text-center" style="padding-top: 100px;">
+            <span class="circle-fail"><h5></h5></span>
+        </div>
+    </div>
+    <footer>
+        <div class="" style="text-align:center; background-color: #585858">
+            <p>made with <i class="fa fa-heart icon" aria-hidden="true"></i> by ip engineering</p>
+        </div>
+    </footer>
+
+
 
     <script src="/socket.io/socket.io.js"></script>
     <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
@@ -68,6 +82,26 @@
                 console.log("Web Socket Connected - socketid: " + socket.id);
             });
         });
+    </script>
+
+    <script>
+        (function () {
+            $('form input').keyup(function () {
+
+                var empty = false;
+                $('form > input').each(function () {
+                    if ($(this).val() == '') {
+                        empty = true;
+                    }
+                });
+
+                if (empty) {
+                    $('#register').attr('disabled', 'disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
+                } else {
+                    $('#register').removeAttr('disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
+                }
+            });
+        })()
     </script>
 </body>
 
