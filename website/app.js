@@ -13,10 +13,6 @@ var port = process.env.PORT || 8080;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-// app.get('/', function(req, res){
-//   res.sendFile(__dirname + '/public/index.html');
-// });
-
 app.use('/api', require('./controllers')(alexaPasscodes, vsocketio));
 
 http.listen(port, function(){
