@@ -7,26 +7,27 @@ block content
 
     .jumbotron.text-center(style='background-color: rgba(255,255,255, 0.1);')
       .container
-        h2 #{headerTitle}
+        h2 #{textJumbotronHeader}
+
 
     .row
-    p.text-center #{description} 
+    p.text-center #{textDescription} 
 
       .col-md-4.col-md-offset-4(style='padding-top: 150px; padding-left: 50px; padding-right: 50px')
         form
           .col-md-12.text-center
-            h4 #{currenBid}
-            h1 #{bidPrice}
+            h4 #{labelCurrenBid}
+            h1 #{labelBidPrice}
           .form-group
             label(for='text')
             input#text.form-control(type='text')
           .col-md-12.text-center
-            button.btn.btn-outline(type='submit') #{btnBid}
+            button.btn.btn-outline(type='submit') #{btnLabelBid}
 
             .row
                 .text-center(style='padding-top: 100px;')
-                    span #{pairResponse}
-                    h5 client_id #{clientId} 
+                    span #{iconResponse}
+                    h5 client_id: #{labelClientID} 
 
     footer
       div(style='text-align:center')
