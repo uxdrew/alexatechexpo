@@ -8,23 +8,24 @@ block content
 
     .jumbotron.text-center(style='background-color: rgba(255,255,255, 0.1);')
       .container
-        h2 Well hello there highest bidder...
+        h2 #{jumbo-header}
+        
     .row
       .col-md-4.col-md-offset-4(style='padding-top: 150px; padding-left: 50px; padding-right: 50px')
         form
           .col-md-12.text-center
-            h4 Current Bid
-            h1 $200.00
+            h4 #{curren-bid}
+            h1 #{bid-price}
           .form-group
             label(for='text')
             input#text.form-control(type='text')
           .col-md-12.text-center
-            button.btn.btn-outline(type='submit') Place Bid
+            button.btn.btn-outline(type='submit') #{btn-bid}
 
             .row
                 .text-center(style='padding-top: 100px;')
                     span.circle-success
-                    h5 client_id: ajj4ijbfdoi2489076
+                    h5 #{client_id}
 
     footer
       div(style='text-align:center')
