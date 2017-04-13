@@ -9,7 +9,7 @@ block content
     .jumbotron.text-center(style='background-color: rgba(255,255,255, 0.1);')
       .container
         h2 #{jumbo-header}
-        
+
     .row
       .col-md-4.col-md-offset-4(style='padding-top: 150px; padding-left: 50px; padding-right: 50px')
         form
@@ -24,12 +24,13 @@ block content
 
             .row
                 .text-center(style='padding-top: 100px;')
-                    span.circle-success
-                    h5 #{client_id}
+                    <!-- span.circle-success #{success} something like that maybe? -->
+                    span #{circle-success}
+                    h5 #{client_id} 
 
     footer
       div(style='text-align:center')
         p
           | made with 
-          i.fa.fa-heart.icon(aria-hidden='true')
+          i.fa.fa-heart.icon(aria-hidden='true') 
           |  by ip engineering
