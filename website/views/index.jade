@@ -1,21 +1,34 @@
 extends layout
 
 block content
-    h1= title
-    p Welcome to our test
 
-    // Wrapper
-    #wrapper
 
-        // USER LIST
-        h2 User List
-        #userList
-            table
-                thead
-                    th UserName
-                    th Email
-                    th Delete?
-                tbody
-        // /USER LIST
+    style(type='text/css').
+        body {background-color: #324D5C;color: #fff;}
 
-    // /WRAPPER
+    .jumbotron.text-center(style='background-color: rgba(255,255,255, 0.1);')
+      .container
+        h2 Well hello there highest bidder...
+    .row
+      .col-md-4.col-md-offset-4(style='padding-top: 150px; padding-left: 50px; padding-right: 50px')
+        form
+          .col-md-12.text-center
+            h4 Current Bid
+            h1 $200.00
+          .form-group
+            label(for='text')
+            input#text.form-control(type='text')
+          .col-md-12.text-center
+            button.btn.btn-outline(type='submit') Place Bid
+
+            .row
+                .text-center(style='padding-top: 100px;')
+                    span.circle-success
+                    h5 client_id: ajj4ijbfdoi2489076
+
+    footer
+      div(style='text-align:center')
+        p
+          | made with 
+          i.fa.fa-heart.icon(aria-hidden='true')
+          |  by ip engineering
