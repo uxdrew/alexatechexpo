@@ -11,8 +11,8 @@ html
         script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')
         script(src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js")
         script(src='https://use.fontawesome.com/ff53abf699.js')
-<<<<<<< HEAD
         script(src="js/flipclock.js")
+        script(src="js/clock.js")
         script(src='/socket.io/socket.io.js')
         script.
             $(function () {
@@ -44,7 +44,7 @@ html
                         console.log(response);
                     });
 
-                    $('#m').val('');
+                    $('#bid-text').val('');
                     return false;
                 });
                 socket.on('chat message', function (msg) {
@@ -59,7 +59,3 @@ html
                     console.log("Web Socket Connected - socketid: " + socket.id);
                 });
             });
-=======
-        <script src="js/flipclock.js"></script>
-        <script src="js/clock.js"></script>
->>>>>>> c8d8cb8e12d3536e2c793819e5c76a46399ec29d
