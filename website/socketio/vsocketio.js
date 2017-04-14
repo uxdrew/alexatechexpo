@@ -10,9 +10,9 @@ exports = module.exports = function(http, alexaPasscodes) {
         console.info('New client connected (id=' + socket.id + ').');
         clients.push(socket);
 
-        socket.on('chat message', function(msg){
-        io.emit('chat message', msg);
-        });
+        // socket.on('new bid', function(msg){
+        //     io.emit('new bid', msg);
+        // });
 
         // When socket disconnects, remove it from the list:
         socket.on('disconnect', function() {
@@ -29,7 +29,7 @@ exports = module.exports = function(http, alexaPasscodes) {
             return clients.find(x => x.id === socketId);
         },
         EmitNewBid: function(bid) {
-            io.emit('chat message', bid);
+            io.emit('new bid', bid);
         }
     };
 };

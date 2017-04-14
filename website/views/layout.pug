@@ -15,48 +15,4 @@ html
         script(src="js/flipclock.js")
         script(src="js/clock.js")
         script(src='/socket.io/socket.io.js')
-        script.
-            $(function () {
-                var socket = io();
-                $('form').submit(function () {
-                    //console.log(socket.id);
-                    //socket.emit('chat message', $('#m').val());
-                    var bid = {
-                        bid: parseFloat($('#bid-text').val()),
-                        clientid: null,
-                        socketid: socket.id
-                    };
-
-                    var settings = {
-                        "async": true,
-                        "crossDomain": true,
-                        "url": "/api/bid/",
-                        "method": "PUT",
-                        "headers": {
-                            "content-type": "application/json",
-                            "cache-control": "no-cache",
-                            "postman-token": "09671f45-267b-e482-0ff1-56fa39971606"
-                        },
-                        "processData": false,
-                        "data": JSON.stringify(bid)
-                    }
-
-                    $.ajax(settings).done(function (response) {
-                        console.log(response);
-                    });
-
-                    $('#bid-text').val('');
-                    return false;
-                });
-                socket.on('chat message', function (msg) {
-                    console.log(msg);
-                    $('#bid-price').text("$" + msg.bid);
-                });
-                socket.on('foo', function (msg) {
-                    //console.info(msg);
-                    $('#messages').append($('<li>').text(msg));
-                });
-                socket.on('connect', function () {
-                    console.log("Web Socket Connected - socketid: " + socket.id);
-                });
-            });
+        script(src="js/index.js")

@@ -22,8 +22,6 @@ app.use('/api', require('./controllers')(alexaPasscodes, vsocketio, bids));
 
 /* GET home page. */
 app.get('/', function(req, res, next) {
-  //check if socketid
-
   res.render('index', 
   { 
     title: 'Vauction : Voice First Auction Demo', 
