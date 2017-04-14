@@ -26,13 +26,13 @@ app.get('/', function(req, res, next) {
 
   res.render('index', 
   { 
-    title: 'Express', 
+    title: 'Vauction : Voice First Auction Demo', 
     textJumbotronHeader: 'You my friend, are not the highest bidder. Sorry.',
     textDescription: "Link your Alexa device for voice-first hotness!",
     labelCurrentBid: "Current Bid",
     labelBidPrice: "$" + bids.GetHighestBid().bid,
     btnLabelBid: "Place Bid",
-    iconResponse: "Not Paired"
+    iconResponse: "NOT PAIRED"
   });
 });
 

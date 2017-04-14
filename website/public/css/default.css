@@ -1,5 +1,3 @@
-
-
 body {
     height: 100%;
     font-family: 'Open Sans', sans-serif;
@@ -9,17 +7,22 @@ body {
     color: #e1e1e1;
 }
 
+.well {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
 .jumbotron p {
     font-size: 12px !important;
 }
 
 p {
-    font-size: 12px !important;
-    font-weight: normal;
+    font-weight: normal !important;
     letter-spacing: 1px;
+    opacity: 0.75;
 }
 
-a { 
+a {
     color: #E37B40;
 }
 
@@ -29,14 +32,23 @@ a:hover {
 }
 
 .center {
-     margin: 0;
+    margin: 0;
     position: absolute;
-    top: 23%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
     opacity: 0.50;
+}
 
+.counter-placement {
+    margin: 0;
+    position: absolute;
+    padding-top: 60%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.50;
+    z-index: -22222
 }
 
 h1 {
@@ -44,6 +56,9 @@ h1 {
     font-weight: 700;
 }
 
+h2 {
+    color: #fff;
+}
 h4 {
     font-size: 18px;
     color: #F0CA4D;
@@ -56,13 +71,24 @@ h5 {
     letter-spacing: 2px;
 }
 
+.left {
+    font-size: 12px;
+    margin: 0;
+    position: absolute;
+    left: 6%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.50;
+}
+
 .btn-outline {
     color: #fff;
     background-color: transparent;
     outline: none !important;
 }
 
-.btn-outline:hover, .btn-outline:focus {
+.btn-outline:hover,
+.btn-outline:focus {
     color: #222;
     border: 2px solid #222;
 }
@@ -112,9 +138,9 @@ h5 {
     line-height: 1.42857143;
     text-align: center;
     color: #324D5C;
-    background:rgba(255,255,255, 0.50);
+    background: rgba(255, 255, 255, 0.50);
     background-image: none;
-    border: 0 solid rgba(255,255,255, 0.25);
+    border: 0 solid rgba(255, 255, 255, 0.25);
     border-radius: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -134,18 +160,19 @@ label {
 }
 
 .circle-success:before {
-  content: ' \25CF';
-  font-size: 14px;
-  color: #6AE3CC;
-  content: 'PAIRED SUCCESSFULLY'
+    content: ' \25CF';
+    font-size: 14px;
+    color: #6AE3CC;
+    content: 'PAIRED SUCCESSFULLY'
 }
 
 .circle-fail:before {
-  content: ' \25CF';
-  font-size: 14px;
-  color: #e1e1e1;
-  content: 'NOT PAIRED'
+    content: ' \25CF';
+    font-size: 14px;
+    color: #e1e1e1;
+    content: 'NOT PAIRED'
 }
+
 
 /*form {
     background-color: #555;
@@ -186,9 +213,13 @@ form button {
 
 footer {
     position: fixed;
-    background-color: rgba(255,255,255, 0.1);
-    height: 50px;
+    background-color: rgba(255, 255, 255, 0.05);
+    height: 30px;
     bottom: 0;
     width: 100%;
     padding-top: 15px;
+}
+
+.cursive {
+    font-family: 'Amatic SC', cursive;
 }

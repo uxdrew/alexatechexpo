@@ -38,6 +38,7 @@
 /* Main */
 .flip-clock-wrapper {
   font: normal 11px "Helvetica Neue", Helvetica, sans-serif;
+  user-select: none;
   -webkit-user-select: none; }
 
 .flip-clock-meridium {
@@ -78,7 +79,7 @@
 }
 
 .flip-clock-wrapper ul li {
-  z-index: 1;
+  z-index: 2;
   position: absolute;
   left: 0;
   top: 0;
@@ -200,9 +201,9 @@
 
 .flip-clock-divider .flip-clock-label {
   position: absolute;
-  top: -1.5em;
+  bottom: -1.5em;
   right: -86px;
-  color: black;
+  color: #fff;
   text-shadow: none; }
 
 .flip-clock-divider.minutes .flip-clock-label {
