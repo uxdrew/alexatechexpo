@@ -9,6 +9,52 @@ html
     body
         block content
         script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+        script(src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js")
         script(src='https://use.fontawesome.com/ff53abf699.js')
-        <script src="js/flipclock.js"></script>
+        script(src="js/flipclock.js")
+        script(src='/socket.io/socket.io.js')
+        script.
+            $(function () {
+                var socket = io();
+                $('form').submit(function () {
+                    //console.log(socket.id);
+                    //socket.emit('chat message', $('#m').val());
+                    var bid = {
+                        bid: parseFloat($('#bid-text').val()),
+                        clientid: null,
+                        socketid: socket.id
+                    };
+
+                    var settings = {
+                        "async": true,
+                        "crossDomain": true,
+                        "url": "/api/bid/",
+                        "method": "PUT",
+                        "headers": {
+                            "content-type": "application/json",
+                            "cache-control": "no-cache",
+                            "postman-token": "09671f45-267b-e482-0ff1-56fa39971606"
+                        },
+                        "processData": false,
+                        "data": JSON.stringify(bid)
+                    }
+
+                    $.ajax(settings).done(function (response) {
+                        console.log(response);
+                    });
+
+                    $('#m').val('');
+                    return false;
+                });
+                socket.on('chat message', function (msg) {
+                    console.log(msg);
+                    $('#bid-price').text("$" + msg.bid);
+                });
+                socket.on('foo', function (msg) {
+                    //console.info(msg);
+                    $('#messages').append($('<li>').text(msg));
+                });
+                socket.on('connect', function () {
+                    console.log("Web Socket Connected - socketid: " + socket.id);
+                });
+            });

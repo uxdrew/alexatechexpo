@@ -27,6 +27,9 @@ exports = module.exports = function(http, alexaPasscodes) {
     return {
         GetSocket: function(socketId) {
             return clients.find(x => x.id === socketId);
+        },
+        EmitNewBid: function(bid) {
+            io.emit('chat message', bid);
         }
     };
 };

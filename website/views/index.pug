@@ -17,10 +17,10 @@ block content
         form
           .col-md-12.text-center
             h4 #{labelCurrentBid}
-            h1 #{labelBidPrice}
+            h1#bid-price #{labelBidPrice}
           .form-group
             label(for='text')
-            input#text.form-control(type='text')
+            input#bid-text.form-control(type='text')
           .col-md-12.text-center
             button.btn.btn-outline(type='submit') #{btnLabelBid}
 

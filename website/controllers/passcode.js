@@ -1,7 +1,6 @@
 module.exports = function (alexaPasscodes) {
   var express = require('express');
   var router = express.Router();
-  var alexaPasscodes = alexaPasscodes;
 
   router.patch('/:clientid', function(req, res) {
     //generate 4 digit passcode

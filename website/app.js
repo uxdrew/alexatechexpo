@@ -5,6 +5,7 @@ var http = require('http').Server(app);
 var alexaPasscodes = require('./helpers/alexapasscodes.js');
 var vsocketio = require('./socketio/vsocketio.js')(http, alexaPasscodes);
 var bodyParser = require('body-parser');
+var bids = require('./helpers/bids.js')(vsocketio);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -17,17 +18,19 @@ var port = process.env.PORT || 8080;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.use('/api', require('./controllers')(alexaPasscodes, vsocketio));
+app.use('/api', require('./controllers')(alexaPasscodes, vsocketio, bids));
 
 /* GET home page. */
 app.get('/', function(req, res, next) {
+  //check if socketid
+
   res.render('index', 
   { 
     title: 'Express', 
-    textJumbotronHeader: 'Well. Hello there highest bidder...',
+    textJumbotronHeader: 'You my friend, are not the highest bidder. Sorry.',
     textDescription: "Link your Alexa device for voice-first hotness!",
     labelCurrentBid: "Current Bid",
-    labelBidPrice: "$100.00",
+    labelBidPrice: "$" + bids.GetHighestBid().bid,
     btnLabelBid: "Place Bid",
     iconResponse: "Not Paired"
   });

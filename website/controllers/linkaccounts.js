@@ -1,8 +1,6 @@
 module.exports = function (alexaPasscodes, vsocketio) {
     var express = require('express');
     var router = express.Router();
-    var alexaPasscodes = alexaPasscodes;
-    var vsocketio = vsocketio;
 
     router.put('/', function (req, res) {
         console.log('linkaccounts POST hit: ' + JSON.stringify(req.body));
@@ -10,10 +8,10 @@ module.exports = function (alexaPasscodes, vsocketio) {
         var clientId = alexaPasscodes.GetAlexaClientId(req.body.passcode)
         if (clientId) {
             var socket = vsocketio.GetSocket(req.body.socketid);
-            if(socket) {
+            if (socket) {
                 alexaPasscodes.LinkSocket(clientId, socket);
                 socket.emit('chat message', 'account linked: ' + clientId);
-                res.send( { alexaClientId: clientId });
+                res.send({ alexaClientId: clientId });
                 return;
             }
             else {
