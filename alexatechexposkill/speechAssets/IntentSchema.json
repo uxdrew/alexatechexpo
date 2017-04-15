@@ -1,0 +1,25 @@
+{
+    "intents": [
+        {
+            "intent": "GetPasscodeIntent"
+        },
+        {
+            "intent": "MakeBidIntent",
+            "slots": [
+                {
+                    "name": "Bid",
+                    "type": "BID_AMOUNT"
+                }
+            ]
+        },
+        {
+            "intent": "GetHighestBidIntent"
+        },
+        {
+            "intent": "AMAZON.StopIntent"
+        },
+        {
+            "intent": "AMAZON.CancelIntent"
+        }
+    ]
+}

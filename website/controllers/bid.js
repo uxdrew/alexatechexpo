@@ -11,9 +11,9 @@ module.exports = function (bids) {
   //update the highest bid
   router.put('/', function (req, res) {
     if (bids.NewBid(req.body))
-      res.send({ result: true, status: "Bid accepted." });
+      res.send({ result: true, message: "Bid accepted." });
     else
-      res.send({ result: false, status: "Bid too low." });
+      res.send({ result: false, message: "Bid too low." });
   });
 
   //end the auction

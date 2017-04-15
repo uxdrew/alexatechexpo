@@ -79,6 +79,8 @@ function onIntent(intentRequest, session, callback) {
     else if ("GetPasscodeIntent" === intentName) {
         console.log("UserId=" + JSON.stringify(session.user));
         getPasscodeResponse(session.user.userId, callback);
+    } else if ("MakeBidIntent" === intentName) {
+        makeBidResponse(session.user.userId, intentRequest.intent, callback);
     } else {
         throw "Invalid intent";
     }
@@ -96,14 +98,13 @@ function onSessionEnded(sessionEndedRequest, session) {
 }
 
 // --------------- Functions that control the skill's behavior -----------------------
-function getPasscodeResponse(userid, callback) {
+function getPasscodeResponse(userId, callback) {
     var sessionAttributes = {};
     var repromptText = null;
 
     var cardTitle = "Get Passcode";
 
-    //test http get
-    getPasscode(userid, function (passcode) {
+    getPasscode(userId, function (passcode) {
 
         var speechOutput = "<speak>Your passcode is <say-as interpret-as=\"digits\">" + passcode + "</say-as></speak>";
         var titleOutput = "Your passcode is " + passcode;
@@ -115,44 +116,51 @@ function getPasscodeResponse(userid, callback) {
     });
 }
 
-function getWelcomeResponse(callback) {
-    // If we wanted to initialize the session to have some attributes we could add those here.
-
+function makeBidResponse(userId, intent, callback) {
     var sessionAttributes = {};
     var repromptText = null;
 
-    var cardTitle = "Http GET Example";
+    var cardTitle = "Get Passcode";
 
-    //test http get
-    testGet(function (response) {
+    makeBid(userId, intent.slots.Bid.value, function (result, message) {
 
-        var speechOutput = "Response status is " + response;
+        var speechOutput = "";
+        var titleOutput = "";
         var shouldEndSession = true;
+        
+        if(result) {
+            speechOutput = "Congratulations, " + message;
+        }
+        else {
+            speechOutput = "I'm sorry, " + message;
+        }
+
+        titleOutput = speechOutput;
 
         callback(sessionAttributes,
-            buildSpeechletResponse(cardTitle, speechOutput, repromptText, shouldEndSession));
+            buildSpeechletResponse(cardTitle, titleOutput, speechOutput, repromptText, shouldEndSession));
 
     });
 }
 
-function testGet(response) {
+// function testGet(response) {
 
-    var http = require('http');
-    var options = {
-        host: 'www.bing.com',
-        port: 80,
-        path: '/',
-        agent: false
-    };
+//     var http = require('http');
+//     var options = {
+//         host: 'www.bing.com',
+//         port: 80,
+//         path: '/',
+//         agent: false
+//     };
 
-    http.get(options, function (res) {
-        console.log("Response: " + res.statusCode);
-        response(res.statusCode);
-    }).on('error', function (e) {
-        console.log("Error message: " + e.message);
-    });
+//     http.get(options, function (res) {
+//         console.log("Response: " + res.statusCode);
+//         response(res.statusCode);
+//     }).on('error', function (e) {
+//         console.log("Error message: " + e.message);
+//     });
 
-}
+// }
 
 function getPasscode(clientid, response) {
     var http = require("http");
@@ -186,12 +194,46 @@ function getPasscode(clientid, response) {
     req.end();
 }
 
+function makeBid(clientid, bid, response) {
+    var http = require("http");
+
+    var options = {
+        "method": "PUT",
+        "hostname": "vauctiontechexpo-dev.us-east-1.elasticbeanstalk.com",
+        "port": "80",
+        "path": "/api/bid/",
+        "headers": {
+            "content-type": "application/json",
+            "cache-control": "no-cache",
+            "postman-token": "8577b1f4-cde5-372f-80de-ab1d8e428ab4"
+        }
+    };
+
+    var req = http.request(options, function (res) {
+        var chunks = [];
+
+        res.on("data", function (chunk) {
+            chunks.push(chunk);
+        });
+
+        res.on("end", function () {
+            var body = Buffer.concat(chunks);
+            console.log(body.toString());
+            var bodyJson = JSON.parse(body);
+            response(bodyJson.result, bodyJson.message);
+        });
+    });
+
+    req.write(JSON.stringify({ bid: bid, socketid: null, clientid: clientid }));
+    req.end();
+}
+
 
 // --------------- Helpers that build all of the responses -----------------------
 
 function buildSpeechletResponse(title, titleOutput, output, repromptText, shouldEndSession) {
-    var outputSpeech = { type: "PlainText", content: output };
-    if(output.startsWith("<speak>")) {
+    var outputSpeech = { type: "PlainText", text: output };
+    if (output.startsWith("<speak>")) {
         outputSpeech = { type: "SSML", ssml: output };
     }
     return {

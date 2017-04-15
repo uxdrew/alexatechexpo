@@ -9,7 +9,7 @@ module = module.exports = function (vsocketio) {
             if(!bid.clientid && !bid.socketid)
                 return false;
 
-            if(bid.bid > highestBid.bid) {
+            if(parseInt(bid.bid) > parseInt(highestBid.bid)) {
                 highestBid = bid;
                 vsocketio.EmitNewBid(highestBid);
                 return true;

@@ -1,0 +1,20 @@
+GetPasscodeIntent get me a passcode
+GetPasscodeIntent generate a passcode
+GetPasscodeIntent generate me a passcode
+GetPasscodeIntent make me a passcode
+GetPasscodeIntent what's my passcode
+GetPasscodeIntent what is my passcode
+
+MakeBidIntent to make a {Bid} dollar bid
+MakeBidIntent to make me a {Bid} dollar bid
+MakeBidIntent to make me a {Bid} dollar bid on the item
+MakeBidIntent to make me a {Bid} dollar bid on the sale
+MakeBidIntent to bid {Bid} dollars
+MakeBidIntent to bid {Bid} dollars on the item
+
+GetHighestBidIntent for the highest bid
+GetHighestBidIntent for the current bid
+GetHighestBidIntent what's the highest bid
+GetHighestBidIntent what's the bid
+GetHighestBidIntent to get the highest bid
+GetHighestBidIntent to get the bid
