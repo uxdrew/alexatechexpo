@@ -11,6 +11,9 @@ MakeBidIntent to make me a {Bid} dollar bid on the item
 MakeBidIntent to make me a {Bid} dollar bid on the sale
 MakeBidIntent to bid {Bid} dollars
 MakeBidIntent to bid {Bid} dollars on the item
+MakeBidIntent bid {Bid} dollars
+MakeBidIntent bid {Bid}
+MakeBidIntent bid {Bid} bucks
 
 GetHighestBidIntent for the highest bid
 GetHighestBidIntent for the current bid
