@@ -43,7 +43,7 @@ a:hover {
 .counter-placement {
     margin: 0;
     position: absolute;
-    padding-top: 60%;
+    padding-top: 70%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
@@ -52,7 +52,7 @@ a:hover {
 }
 
 h1 {
-    font-size: 44px;
+    font-size: 48px;
     font-weight: 700;
 }
 
@@ -72,10 +72,10 @@ h5 {
 }
 
 .left {
-    font-size: 12px;
+    font-size: 10px;
     margin: 0;
     position: absolute;
-    left: 6%;
+    left: 5%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
     opacity: 0.50;
@@ -217,7 +217,7 @@ footer {
     height: 30px;
     bottom: 0;
     width: 100%;
-    padding-top: 15px;
+    padding: 15px;
 }
 
 .cursive {

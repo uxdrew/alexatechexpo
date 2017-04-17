@@ -1,6 +1,6 @@
 module = module.exports = function (vsocketio) {
     var vsocketio = vsocketio;
-    var highestBid = { bid: 0.0, clientid: null, socketid: null };
+    var highestBid = { bid: 0.00, clientid: null, socketid: null };
 
     return {
         NewBid: function (bid) {
