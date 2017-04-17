@@ -32,7 +32,7 @@ $(function () {
 
     $('linkform').submit(function() {
         //make api call to /api/linkaccounts
-
+       
         //depending on successful pairing or not, 
         //show returned clientid and hide form
         //or do nothing
@@ -46,6 +46,10 @@ $(function () {
             //make request to tripos with winning amount
 
             //the bid is mine, i'm winning!!
+            
+            document.body.style.backgroundColor = "#324D5C";
+            $('#text-helper').text('You are now the highest bidder!');
+            $('#btn-hide').hide();
             //page changes here
             //have view receipt button
             //opens modal, displays tripos raw response (for starters), and link to express dashboard
@@ -53,6 +57,7 @@ $(function () {
         else {
             //bid isn't mine, i'm losing :(
             //page changes here
+            document.body.style.backgroundColor = "#DE5B49";
         }
     });
 
@@ -63,10 +68,12 @@ $(function () {
         if(lastbid.socketid == socket.id) {
             //i won!
             //page changes here
+            document.body.style.backgroundColor = "#46B29D";
         }
         else {
             //i lost!
             //page changes here
+            document.body.style.backgroundColor = "#DE5B49";
         }
     });
 

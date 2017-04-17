@@ -2,12 +2,10 @@ extends layout
 
 block content
 
-  //- style(type='text/css').
-  //-     body {background-color: #324D5C;color: #fff;} 
-  .container
+  .container-fluid
     .row
       .well.text-center
-        h2 #{textJumbotronHeader}
+        h2#text-helper #{textJumbotronHeader}
     .row
       p.text-center #{textDescription} 
 
@@ -21,7 +19,7 @@ block content
               input#bid-text.form-control(type='text')
           .row
             .col-md-12.text-center
-              button.btn.btn-outline(type='submit') #{btnLabelBid}
+              button#btn-hide.btn.btn-outline(type='submit') #{btnLabelBid}
 
     footer
       p.left
