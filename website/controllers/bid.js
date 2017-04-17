@@ -18,7 +18,8 @@ module.exports = function (bids) {
 
   //end the auction
   router.delete('/', function (req, res) {
-
+    bids.EndAuction();
+    res.status(200).send("OK");
   });
 
   return router;

@@ -19,6 +19,11 @@ module = module.exports = function (vsocketio) {
         },
         GetHighestBid: function() {
             return highestBid;
+        },
+        EndAuction: function() {
+            highestBid = { bid: 0.00, clientid: null, socketid: null };
+            vsocketio.EmitEndAuction();
+            vsocketio.EmitNewBid(highestBid);
         }
     };
 };
