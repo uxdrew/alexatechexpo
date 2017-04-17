@@ -48,6 +48,7 @@ $(function () {
             //the bid is mine, i'm winning!!
             
             document.body.style.backgroundColor = "#324D5C";
+            $('#text-how').text('');
             $('#text-helper').text('You are now the highest bidder!');
             $('#btn-hide').hide();
             //page changes here
@@ -58,6 +59,9 @@ $(function () {
             //bid isn't mine, i'm losing :(
             //page changes here
             document.body.style.backgroundColor = "#DE5B49";
+            $('#text-how').text('');
+            $('#text-helper').text('You are not the highest bidder!');
+            
         }
     });
 
