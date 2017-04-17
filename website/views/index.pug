@@ -2,35 +2,31 @@ extends layout
 
 block content
 
-    style(type='text/css').
-        body {background-color: #324D5C;color: #fff;} 
-
-    .well.text-center
-      .container
+  //- style(type='text/css').
+  //-     body {background-color: #324D5C;color: #fff;} 
+  .container
+    .row
+      .well.text-center
         h2 #{textJumbotronHeader}
-
     .row
       p.text-center #{textDescription} 
 
-      .col-md-4.col-md-offset-4(style='padding-top: 75px; padding-left: 50px; padding-right: 50px')
-        form
-          .col-md-12.text-center
-            h4 #{labelCurrentBid}
-            h1#bid-price #{labelBidPrice}
-          .form-group
-            label(for='text')
-            input#bid-text.form-control(type='text')
-          .col-md-12.text-center
-            button.btn.btn-outline(type='submit') #{btnLabelBid}
-
-      .counter-placement
-          .clock
+        .col-md-4.col-md-offset-4(style='padding-top: 75px;')
+          form
+            .col-md-12.text-center
+              h4 #{labelCurrentBid}
+              h1#bid-price #{labelBidPrice}
+            .form-group
+              label(for='text')
+              input#bid-text.form-control(type='text')
+          .row
+            .col-md-12.text-center
+              button.btn.btn-outline(type='submit') #{btnLabelBid}
 
     footer
       p.left
         | #{iconResponse}
-        | client_id: #{labelClientID} 
-      
+        | client_id: #{labelClientID}     
       p.center.cursive
         | made with 
         i.fa.fa-heart.icon(aria-hidden='true')

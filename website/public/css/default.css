@@ -59,6 +59,7 @@ h1 {
 h2 {
     color: #fff;
 }
+
 h4 {
     font-size: 18px;
     color: #F0CA4D;
@@ -70,6 +71,7 @@ h5 {
     color: #e1e1e1;
     letter-spacing: 2px;
 }
+
 
 .left {
     font-size: 10px;
@@ -213,11 +215,11 @@ form button {
 
 footer {
     position: fixed;
-    background-color: rgba(255, 255, 255, 0.05);
-    height: 30px;
+    right: 0;
     bottom: 0;
-    width: 100%;
-    padding: 15px;
+    left: 0;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
 .cursive {
