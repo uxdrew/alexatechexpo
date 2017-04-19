@@ -26,7 +26,7 @@ block content
                   h1#bid-price #{labelBidPrice}
                 .form-group
                   label(for='text')
-                  input#bid-text.form-control(type='text')
+                  input#bid-text.form-control(type='number')
               .row
                 .col-md-12.text-center
                   button#btn-hide.btn.btn-outline #{btnLabelBid}        
@@ -35,7 +35,7 @@ block content
                   form#passcode-form(style="display: none")
                     br
                     .form-group
-                      input.form-control-small(type='text', id='txtPasscode')
+                      input.form-control-small(type='number', id='txtPasscode')
                       button#btn.btn.btn-small(name='btnPair') Pair
                       p.text-center#client-id(style='font-size: 8px')
                 
