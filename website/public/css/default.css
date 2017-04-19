@@ -29,6 +29,7 @@ input[type="color"]:focus,
 }
 
 .well {
+    padding: 5px;
     border: none;
     background-color: rgba(255, 255, 255, 0.05);
 }
@@ -76,16 +77,20 @@ a:hover {
 h1 {
     font-size: 48px;
     font-weight: 700;
+    padding-top: 2px;
 }
 
 h2 {
     color: #fff;
+    letter-spacing: 2px;
+    margin-top: 2px;
+    font-size: 27px;
 }
 
 h4 {
     font-size: 18px;
     color: #F0CA4D;
-    line-height: .2px;
+    line-height: .5;
 }
 
 h5 {
@@ -205,7 +210,7 @@ hr {
     font-weight: 700;
     text-align: center;
     color: #324D5C;
-    background: rgba(255, 255, 255, 0.50);
+    background: rgba(255, 255, 255, 0.30);
     background-image: none;
     border: 0 solid rgba(255, 255, 255, 0.25);
     border-radius: 0;
