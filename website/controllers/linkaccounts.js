@@ -3,7 +3,7 @@ module.exports = function (alexaPasscodes, vsocketio) {
     var router = express.Router();
 
     router.put('/', function (req, res) {
-        console.log('linkaccounts POST hit: ' + JSON.stringify(req.body));
+        console.log('linkaccounts PUT hit: ' + JSON.stringify(req.body));
 
         var clientId = alexaPasscodes.GetAlexaClientId(req.body.passcode)
         if (clientId) {

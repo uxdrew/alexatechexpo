@@ -6,6 +6,7 @@ GetPasscodeIntent what's my passcode
 GetPasscodeIntent what is my passcode
 
 MakeBidIntent to make a {Bid} dollar bid
+MakeBidIntent to make a {Bid} buck bid
 MakeBidIntent to make me a {Bid} dollar bid
 MakeBidIntent to make me a {Bid} dollar bid on the item
 MakeBidIntent to make me a {Bid} dollar bid on the sale
@@ -14,6 +15,8 @@ MakeBidIntent to bid {Bid} dollars on the item
 MakeBidIntent bid {Bid} dollars
 MakeBidIntent bid {Bid}
 MakeBidIntent bid {Bid} bucks
+MakeBidIntent to make a bid for {Bid} bucks
+MakeBidIntent to make a bid for {Bid} dollars
 
 GetHighestBidIntent for the highest bid
 GetHighestBidIntent for the current bid
@@ -21,3 +24,13 @@ GetHighestBidIntent what's the highest bid
 GetHighestBidIntent what's the bid
 GetHighestBidIntent to get the highest bid
 GetHighestBidIntent to get the bid
+
+EndAuctionIntent to end the auction
+EndAuctionIntent to end auction
+EndAuctionIntent to stop auction
+EndAuctionIntent to stop the auction
+EndAuctionIntent to quit the auction
+EndAuctionIntent to quit auction
+EndAuctionIntent to quit
+EndAuctionIntent to stop
+EndAuctionIntent to end

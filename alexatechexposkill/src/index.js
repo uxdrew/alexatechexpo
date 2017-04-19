@@ -81,6 +81,8 @@ function onIntent(intentRequest, session, callback) {
         getPasscodeResponse(session.user.userId, callback);
     } else if ("MakeBidIntent" === intentName) {
         makeBidResponse(session.user.userId, intentRequest.intent, callback);
+    } else if ("EndAuctionIntent" === intentName) {
+        quitAuctionResponse(callback);
     } else {
         throw "Invalid intent";
     }
@@ -127,12 +129,38 @@ function makeBidResponse(userId, intent, callback) {
         var speechOutput = "";
         var titleOutput = "";
         var shouldEndSession = true;
-        
-        if(result) {
+
+        if (result) {
             speechOutput = "Congratulations, " + message;
         }
         else {
             speechOutput = "I'm sorry, " + message;
+        }
+
+        titleOutput = speechOutput;
+
+        callback(sessionAttributes,
+            buildSpeechletResponse(cardTitle, titleOutput, speechOutput, repromptText, shouldEndSession));
+
+    });
+}
+
+function quitAuctionResponse(callback) {
+    var sessionAttributes = {};
+    var repromptText = null;
+
+    var cardTitle = "End Auction";
+
+    quitAuction(function (result, message) {
+
+        var speechOutput = "";
+        var titleOutput = "";
+        var shouldEndSession = true;
+
+        if (result) {
+            speechOutput = "Okay, I've ended the auction.";
+        } else {
+            speechOutput = "Sorry, couldn't end the auction";
         }
 
         titleOutput = speechOutput;
@@ -225,6 +253,38 @@ function makeBid(clientid, bid, response) {
     });
 
     req.write(JSON.stringify({ bid: bid, socketid: null, clientid: clientid }));
+    req.end();
+}
+
+function quitAuction(response) {
+    var http = require("http");
+
+    var options = {
+        "method": "DELETE",
+        "hostname": "vauctiontechexpo-dev.us-east-1.elasticbeanstalk.com",
+        "port": "80",
+        "path": "/api/bid/",
+        "headers": {
+            "cache-control": "no-cache",
+            "postman-token": "b9bb8c41-7b8d-b04b-9260-14859fe74758"
+        }
+    };
+
+    var req = http.request(options, function (res) {
+        var chunks = [];
+
+        res.on("data", function (chunk) {
+            chunks.push(chunk);
+        });
+
+        res.on("end", function () {
+            var body = Buffer.concat(chunks);
+            console.log(body.toString());
+            if (body.toString() == "OK") { response(true, ""); }
+            else { response(false, ""); }
+        });
+    });
+
     req.end();
 }
 

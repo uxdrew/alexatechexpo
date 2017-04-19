@@ -183,14 +183,14 @@ label {
     color: #DE5B49;
 }
 
-.circle-success:before {
+.pair-yes:before {
     content: ' \25CF';
     font-size: 14px;
     color: #6AE3CC;
-    content: 'PAIRED SUCCESSFULLY'
+    content: 'PAIRED'
 }
 
-.circle-fail:before {
+.pair-no:before {
     content: ' \25CF';
     font-size: 14px;
     color: #e1e1e1;

@@ -1,7 +1,8 @@
 $(function () {
     var socket = io();
+    var clientid;
     var lastbid = null;
-    $('form').submit(function () {
+    $('#bid-form').submit(function () {
         //console.log(socket.id);
         var bid = {
             bid: parseFloat($('#bid-text').val()),
@@ -11,7 +12,7 @@ $(function () {
 
         var settings = {
             "async": true,
-            "crossDomain": true,
+            "crossDomain": false,
             "url": "/api/bid/",
             "method": "PUT",
             "headers": {
@@ -30,9 +31,9 @@ $(function () {
         return false;
     });
 
-    $('linkform').submit(function() {
+    $('linkform').submit(function () {
         //make api call to /api/linkaccounts
-       
+
         //depending on successful pairing or not, 
         //show returned clientid and hide form
         //or do nothing
@@ -42,11 +43,11 @@ $(function () {
         lastbid = msg;
         $('#bid-price').text("$" + msg.bid);
 
-        if(msg.socketid == socket.id) {
+        if (msg.socketid == socket.id || msg.clientid == clientid) {
             //make request to tripos with winning amount
 
             //the bid is mine, i'm winning!!
-            
+
             document.body.style.backgroundColor = "#324D5C";
             $('#text-how').text('');
             $('#text-helper').text('You are now the highest bidder!');
@@ -61,7 +62,7 @@ $(function () {
             document.body.style.backgroundColor = "#DE5B49";
             $('#text-how').text('');
             $('#text-helper').text('You are not the highest bidder!');
-            
+
         }
     });
 
@@ -69,7 +70,7 @@ $(function () {
     //page changes to show auction has ended
     socket.on('end auction', function (msg) {
         console.log(msg);
-        if(lastbid.socketid == socket.id) {
+        if (lastbid.socketid == socket.id) {
             //i won!
             //page changes here
             document.body.style.backgroundColor = "#46B29D";
@@ -83,5 +84,32 @@ $(function () {
 
     socket.on('connect', function () {
         console.log("Web Socket Connected - socketid: " + socket.id);
+    });
+
+    $('#passcode-form').submit(function () {
+        var data = { passcode: $('#txtPasscode').val(), socketid: socket.id };
+
+        var settings = {
+            "async": true,
+            "crossDomain": false,
+            "url": "/api/linkaccounts/",
+            "method": "PUT",
+            "headers": {
+                "content-type": "application/json",
+                "cache-control": "no-cache"
+            },
+            "processData": false,
+            "data": JSON.stringify(data)
+        }
+
+        $.ajax(settings).done(function (response) {
+            console.log(response);
+            clientid = response.alexaClientId;
+            $('#client-id').text(" | client id: " + clientid);    
+        }).fail(function (jqXHR, textStatus, errorThrown) {
+            console.log(jqXHR.responseText);
+        });
+
+        return false;
     });
 });

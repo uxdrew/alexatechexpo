@@ -20,7 +20,7 @@ block content
           p.text-center#text-how #{textDescription} 
 
             .col-md-4.col-md-offset-4(style='padding-top: 75px;')
-              form
+              form#bid-form
                 .col-md-12.text-center
                   h4 #{labelCurrentBid}
                   h1#bid-price #{labelBidPrice}
@@ -29,12 +29,16 @@ block content
                   input#bid-text.form-control(type='text')
               .row
                 .col-md-12.text-center
-                  button#btn-hide.btn.btn-outline(type='submit') #{btnLabelBid}
+                  button#btn-hide.btn.btn-outline #{btnLabelBid}
 
         footer
           p.left
-            | #{iconResponse}
-            | client_id: #{labelClientID}     
+            form#passcode-form(style="display: none")
+              .form-group
+                input(type='text', id='txtPasscode')
+                button#btn.btn-outline(name='btnPair') Pair
+            a.pair-no(href="#", onclick="$('#passcode-form').show()")
+            p#client-id
           p.center.cursive
             | made with 
             i.fa.fa-heart.icon(aria-hidden='true')
