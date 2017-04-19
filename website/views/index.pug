@@ -29,8 +29,7 @@ block content
                   input#bid-text.form-control(type='text')
               .row
                 .col-md-12.text-center
-                  button#btn-hide.btn.btn-outline #{btnLabelBid}
-              
+                  button#btn-hide.btn.btn-outline #{btnLabelBid}        
               .row
                 .col-md-4.col-md-offset-4 
                   form#passcode-form(style="display: none")
@@ -38,7 +37,7 @@ block content
                     .form-group
                       input.form-control-small(type='text', id='txtPasscode')
                       button#btn.btn.btn-small(name='btnPair') Pair
-                      p.text-center#client-id(style='font-size: 8px') 13245
+                      p.text-center#client-id(style='font-size: 8px')
         footer
           p.left
             a.pair-no(href="#", onclick="$('#passcode-form').show()")

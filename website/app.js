@@ -26,7 +26,7 @@ app.get('/', function(req, res, next) {
   { 
     title: 'Vauction : Voice First Auction Demo', 
     textJumbotronHeader: 'You my friend, are not the highest bidder. Sorry.',
-    textDescription: "Link your Alexa device for voice-first hotness!",
+    textDescription: "",
     labelCurrentBid: "Current Bid",
     labelBidPrice: "$" + bids.GetHighestBid().bid,
     btnLabelBid: "Place Bid"
