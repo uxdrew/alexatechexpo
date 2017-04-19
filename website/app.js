@@ -25,11 +25,11 @@ app.get('/', function(req, res, next) {
   res.render('index', 
   { 
     title: 'Vauction : Voice First Auction Demo', 
-    textJumbotronHeader: 'You my friend, are not the highest bidder. Sorry.',
-    textDescription: "",
-    labelCurrentBid: "Current Bid",
-    labelBidPrice: "$" + bids.GetHighestBid().bid,
-    btnLabelBid: "Place Bid"
+    textJumbotronHeader: 'Welcome to Vauction!',
+    textDescription: '',
+    labelCurrentBid: 'Current Bid',
+    labelBidPrice: '$' + bids.GetHighestBid().bid,
+    btnLabelBid: 'Place Bid'
   });
 });
 
