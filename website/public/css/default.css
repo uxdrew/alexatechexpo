@@ -45,7 +45,7 @@ p {
 }
 
 a {
-    color: #E37B40;
+    color: #DE5B49;
 }
 
 a:hover {
@@ -164,13 +164,7 @@ hr {
 
 .btn-menu:hover,
 .btn-menu:focus {
-    color: #222;
-    border: 2px solid #222;
-}
-
-.btn-menu:active {
-    border: 2px solid #F0CA4D;
-    color: #F0CA4D;
+    color: #DE5B49;
 }
 
 .btn-menu:disabled {
