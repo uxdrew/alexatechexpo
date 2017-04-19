@@ -279,6 +279,18 @@ label {
     color: #fff;
 }
 
+sticky {
+    position: fixed;
+    height: 12px;
+    right: 0;
+    bottom: 50px;
+    left: 0;
+    margin: 2px;
+    width: 100%;
+    color: #fff;
+    background-color: rgba(106, 227, 204, 0.50);
+}
+
 footer {
     position: fixed;
     right: 0;
