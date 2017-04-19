@@ -17,16 +17,16 @@ block content
           .well.text-center
             h2#text-helper #{textJumbotronHeader}
         .row
-          p.text-center#text-how #{textDescription} 
+      
 
-            .col-md-4.col-md-offset-4(style='padding-top: 50px;')
+            .col-md-4.col-md-offset-4
               form#bid-form
                 .col-md-12.text-center
                   h4 #{labelCurrentBid}
                   h1#bid-price #{labelBidPrice}
                 .form-group
                   label(for='text')
-                  input#bid-text.form-control(type='text')
+                  input#bid-text.form-control(type='number')
               .row
                 .col-md-12.text-center
                   button#btn-hide.btn.btn-outline #{btnLabelBid}        
@@ -35,9 +35,12 @@ block content
                   form#passcode-form(style="display: none")
                     br
                     .form-group
-                      input.form-control-small(type='text', id='txtPasscode')
+                      input.form-control-small(type='number', id='txtPasscode')
                       button#btn.btn.btn-small(name='btnPair') Pair
                       p.text-center#client-id(style='font-size: 8px')
+                
+              .row      
+                p.text-center#text-how #{textDescription} 
         footer
           p.left
             a.pair-no(href="#", onclick="$('#passcode-form').show()")
