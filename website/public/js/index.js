@@ -43,7 +43,8 @@ $(function () {
         lastbid = msg;
         $('#bid-price').text("$" + msg.bid);
 
-        if (msg.socketid == socket.id || msg.clientid == clientid) {
+        //check if either the socketid matches this session or that the clientid matches
+        if ((msg.socketid && msg.socketid == socket.id) || (msg.clientid && msg.clientid == clientid)) {
             //make request to tripos with winning amount
 
             //the bid is mine, i'm winning!!
@@ -105,7 +106,7 @@ $(function () {
         $.ajax(settings).done(function (response) {
             console.log(response);
             clientid = response.alexaClientId;
-            $('#client-id').text(" | client id: " + clientid);    
+            $('#client-id').text("client id: " + clientid);    
         }).fail(function (jqXHR, textStatus, errorThrown) {
             console.log(jqXHR.responseText);
         });
