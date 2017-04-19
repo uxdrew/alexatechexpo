@@ -84,7 +84,7 @@ h2 {
 h4 {
     font-size: 18px;
     color: #F0CA4D;
-    line-height: .5px;
+    line-height: .2px;
 }
 
 h5 {
@@ -93,6 +93,9 @@ h5 {
     letter-spacing: 2px;
 }
 
+hr {
+    opacity: 0.20 !important;
+}
 
 .left {
     font-size: 10px;
@@ -118,6 +121,7 @@ h5 {
     color: #fff;
     background-color: transparent;
     outline: none !important;
+    border: 2px solid #fff;
 }
 
 .btn-outline:hover,
@@ -133,6 +137,22 @@ h5 {
 
 .btn-outline:disabled {
     visibility: hidden;
+}
+
+.btn-small {
+    width: 100% !important;
+    height: auto !important;
+    color: #fff;
+    background-color: transparent;
+    outline: none !important;
+}
+
+.btn-small:hover {
+    width: 100% !important;
+    height: auto !important;
+    color: #F0CA4D;
+    background-color: transparent;
+    outline: none !important;
 }
 
 .btn-menu {
@@ -178,7 +198,6 @@ h5 {
     -ms-user-select: none;
     user-select: none;
     background-image: none;
-    border: 2px solid #fff;
     border-radius: 0;
 }
 
@@ -204,6 +223,25 @@ h5 {
     letter-spacing: 1px;
     outline: none !important;
 }
+.form-control-small {
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    line-height: 1.42857143;
+    text-align: center;
+    color: #F0CA4D;
+    background: rgba(255, 255, 255, 0.10);
+    background-image: none;
+    border: 0 solid rgba(255, 255, 255, 0.25);
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+    letter-spacing: 1px;
+    outline: none !important;
+}
 
 label {
     font-weight: 400;
@@ -216,14 +254,14 @@ label {
 
 .pair-yes:before {
     content: ' \25CF';
-    font-size: 14px;
+    font-size: 10px;
     color: #6AE3CC;
     content: 'PAIRED'
 }
 
 .pair-no:before {
     content: ' \25CF';
-    font-size: 14px;
+    font-size: 10px;
     color: #e1e1e1;
     content: 'NOT PAIRED'
 }
