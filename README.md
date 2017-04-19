@@ -36,3 +36,10 @@ Wait for EB instance to be created, will take a few minutes
 
 After changes are made to website, run `eb deploy` to push the changes to EB
 
+To enable elastic beanstalk web sockets (and not fall back to polling): 
+
+1. Make sure `enable-websockets.config` exists in `/website/.ebextensions`. This will enable the nginx proxy to do the upgrade.
+2. In AWS Console, go to EC2, and click on Target Groups under Load Balancing on the left side of the screen. Scroll to bottom of Description tab and hit Edit Attributes. Then change the Stickiness option from Disable Stickiness to Enable load balancer generated cookie stickiness and set a duration.
+
+
+
