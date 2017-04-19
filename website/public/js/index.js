@@ -109,6 +109,7 @@ $(function () {
             $('#client-id').text("client id: " + clientid);
             $('#passcode-form').hide();
             $('#is-paired').attr('class', 'pair-yes')
+            $('#sticky').show();
         }).fail(function (jqXHR, textStatus, errorThrown) {
             console.log(jqXHR.responseText);
         });
