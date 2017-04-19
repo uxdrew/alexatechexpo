@@ -29,8 +29,7 @@ app.get('/', function(req, res, next) {
     textDescription: "Link your Alexa device for voice-first hotness!",
     labelCurrentBid: "Current Bid",
     labelBidPrice: "$" + bids.GetHighestBid().bid,
-    btnLabelBid: "Place Bid",
-    iconResponse: "NOT PAIRED"
+    btnLabelBid: "Place Bid"
   });
 });
 
