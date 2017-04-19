@@ -13,9 +13,6 @@
             ]
         },
         {
-            "intent": "EndAuctionIntent"
-        },
-        {
             "intent": "GetHighestBidIntent"
         },
         {

@@ -24,13 +24,3 @@ GetHighestBidIntent what's the highest bid
 GetHighestBidIntent what's the bid
 GetHighestBidIntent to get the highest bid
 GetHighestBidIntent to get the bid
-
-EndAuctionIntent to end the auction
-EndAuctionIntent to end auction
-EndAuctionIntent to stop auction
-EndAuctionIntent to stop the auction
-EndAuctionIntent to quit the auction
-EndAuctionIntent to quit auction
-EndAuctionIntent to quit
-EndAuctionIntent to stop
-EndAuctionIntent to end
