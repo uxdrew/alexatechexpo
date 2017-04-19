@@ -106,7 +106,9 @@ $(function () {
         $.ajax(settings).done(function (response) {
             console.log(response);
             clientid = response.alexaClientId;
-            $('#client-id').text("client id: " + clientid);    
+            $('#client-id').text("client id: " + clientid);
+            $('#passcode-form').hide();
+            $('#is-paired').attr('class', 'pair-yes')
         }).fail(function (jqXHR, textStatus, errorThrown) {
             console.log(jqXHR.responseText);
         });
