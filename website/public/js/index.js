@@ -52,7 +52,7 @@ $(function () {
             document.body.style.backgroundColor = "#324D5C";
             $('#text-how').text('');
             $('#text-helper').text('You are now the highest bidder!');
-            $('#btn-hide').hide();
+            $('#btn-bid').hide();
             //page changes here
             //have view receipt button
             //opens modal, displays tripos raw response (for starters), and link to express dashboard
@@ -63,7 +63,7 @@ $(function () {
             document.body.style.backgroundColor = "#DE5B49";
             $('#text-how').text('');
             $('#text-helper').text('You are not the highest bidder!');
-
+            $('#btn-bid').show();
         }
     });
 
