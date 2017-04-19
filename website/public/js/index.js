@@ -115,4 +115,20 @@ $(function () {
 
         return false;
     });
+
+    $('#end-auction').click(function () {
+        var settings = {
+            "async": true,
+            "crossDomain": true,
+            "url": "/api/bid/",
+            "method": "DELETE",
+            "headers": {
+                "cache-control": "no-cache"
+            }
+        }
+
+        $.ajax(settings).done(function (response) {
+            console.log(response);
+        });
+    });
 });

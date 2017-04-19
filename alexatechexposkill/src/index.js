@@ -199,8 +199,7 @@ function getPasscode(clientid, response) {
         "port": "80",
         "path": "/api/passcode/" + encodeURIComponent(clientid),
         "headers": {
-            "cache-control": "no-cache",
-            "postman-token": "5cf4a561-b90f-56f3-2863-b1a630934b60"
+            "cache-control": "no-cache"
         }
     };
 
@@ -232,8 +231,7 @@ function makeBid(clientid, bid, response) {
         "path": "/api/bid/",
         "headers": {
             "content-type": "application/json",
-            "cache-control": "no-cache",
-            "postman-token": "8577b1f4-cde5-372f-80de-ab1d8e428ab4"
+            "cache-control": "no-cache"
         }
     };
 
@@ -265,8 +263,7 @@ function quitAuction(response) {
         "port": "80",
         "path": "/api/bid/",
         "headers": {
-            "cache-control": "no-cache",
-            "postman-token": "b9bb8c41-7b8d-b04b-9260-14859fe74758"
+            "cache-control": "no-cache"
         }
     };
 
