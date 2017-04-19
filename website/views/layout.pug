@@ -3,17 +3,18 @@ html
     head
         title= title
         meta(name='viewport', content='width=device-width, initial-scale=1')
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Open+Sans:400,600')
+        link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Amatic+SC')
+        link(rel='stylesheet', href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css')
         link(rel='stylesheet', href='/css/default.css')
-        <link rel="stylesheet" href="css/flipclock.css" type="text/css">
+        link(rel='stylesheet', href='/css/simple-sidebar.css')
+        link(rel='stylesheet', href='/css/flipclock.css')
     body
         block content
-        script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')
-        script(src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js")
+        script(src='//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')
+        script(src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js')
         script(src='https://use.fontawesome.com/ff53abf699.js')
-        script(src="js/flipclock.js")
-        script(src="js/clock.js")
+        script(src='js/flipclock.js')
+        script(src='js/clock.js')
         script(src='/socket.io/socket.io.js')
         script(src="js/index.js")
