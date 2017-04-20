@@ -21,9 +21,12 @@ module = module.exports = function (vsocketio) {
             return highestBid;
         },
         EndAuction: function() {
+            vsocketio.EmitEndAuction(highestBid);
+            ProcessTransaction(highestBid.bid);
             highestBid = { bid: 0.00, clientid: null, socketid: null };
-            vsocketio.EmitEndAuction();
-            vsocketio.EmitNewBid(highestBid);
+        },
+        ProcessTransaction: function(amount) {
+            //run txn via tripos for amount
         }
     };
 };

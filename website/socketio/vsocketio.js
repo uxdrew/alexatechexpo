@@ -31,8 +31,8 @@ exports = module.exports = function(http, alexaPasscodes) {
         EmitNewBid: function(bid) {
             io.emit('new bid', bid);
         },
-        EmitEndAuction: function() {
-            io.emit('end auction');
+        EmitEndAuction: function(bid) {
+            io.emit('end auction', bid);
         }
     };
 };

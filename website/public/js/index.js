@@ -71,11 +71,20 @@ $(function () {
     //page changes to show auction has ended
     socket.on('end auction', function (msg) {
         console.log(msg);
-        if (lastbid.socketid == socket.id) {
+
+        $('#bid-row').hide();
+        $('#done-row').show();
+        $("#wrapper").toggleClass("toggled");
+
+        //check if we won
+        if (msg.socketid == socket.id) {
             //i won!
             //page changes here
+            $('#won-div').show();
+            $('#lost-div').hide();
             document.body.style.backgroundColor = "#46B29D";
             $('#text-helper').text('winner!');
+            $('#won-detail').text("You've paid $" + msg.bid + " with Vantiv/TriPOS!!!1!1");
         }
         else {
             //i lost!
@@ -130,10 +139,13 @@ $(function () {
                 "cache-control": "no-cache"
             }
         }
-        
 
         $.ajax(settings).done(function (response) {
             console.log(response);
         });
+    });
+
+    $('#receipt-btn').click(function() {
+
     });
 });
