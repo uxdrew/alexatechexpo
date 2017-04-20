@@ -84,13 +84,13 @@ $(function () {
             $('#lost-div').hide();
             document.body.style.backgroundColor = "#46B29D";
             $('#text-helper').text('winner!');
-            $('#won-detail').text("You've paid $" + msg.bid + " with Vantiv/TriPOS!!!1!1");
+            $('#won-detail').text("We have charged $" + msg.bid + " using triPOS to the card on file");
         }
         else {
             //i lost!
             //page changes here
             document.body.style.backgroundColor = "#DE5B49";
-            $('#text-helper').text(':(game over! :(');
+            $('#text-helper').text('game over! :(');
         }
     });
 
