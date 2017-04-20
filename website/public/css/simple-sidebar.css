@@ -30,7 +30,7 @@
     height: 100%;
     margin-left: -150px;
     overflow-y: auto;
-    background: #555;
+    background-color: rgba(255, 255, 255, 0.002);
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -60,6 +60,7 @@
     width: 250px;
     margin: 0;
     padding: 0;
+    padding-top: 95%;
     list-style: none;
 }
 
@@ -77,7 +78,7 @@
 .sidebar-nav li a:hover {
     text-decoration: none;
     color: #fff;
-    background: rgba(255,255,255,0.2);
+    background-color: #F0CA4D;
 }
 
 .sidebar-nav li a:active,

@@ -51,7 +51,7 @@ $(function () {
 
             document.body.style.backgroundColor = "#324D5C";
             $('#text-how').text('');
-            $('#text-helper').text('You are now the highest bidder!');
+            $('#text-helper').text('highest bidder! :)');
             $('#btn-bid').hide();
             //page changes here
             //have view receipt button
@@ -62,7 +62,7 @@ $(function () {
             //page changes here
             document.body.style.backgroundColor = "#DE5B49";
             $('#text-how').text('');
-            $('#text-helper').text('You are not the highest bidder!');
+            $('#text-helper').text('bid again! :o');
             $('#btn-bid').show();
         }
     });
@@ -75,11 +75,13 @@ $(function () {
             //i won!
             //page changes here
             document.body.style.backgroundColor = "#46B29D";
+            $('#text-helper').text('winner!');
         }
         else {
             //i lost!
             //page changes here
             document.body.style.backgroundColor = "#DE5B49";
+            $('#text-helper').text(':(game over! :(');
         }
     });
 
@@ -127,6 +129,7 @@ $(function () {
                 "cache-control": "no-cache"
             }
         }
+        
 
         $.ajax(settings).done(function (response) {
             console.log(response);

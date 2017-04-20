@@ -24,8 +24,8 @@ app.use('/api', require('./controllers')(alexaPasscodes, vsocketio, bids));
 app.get('/', function(req, res, next) {
   res.render('index', 
   { 
-    title: 'Vauction : Voice First Auction Demo', 
-    textJumbotronHeader: 'Welcome to Vauction!',
+    title: '(v)auction : Voice First Auction Demo', 
+    textJumbotronHeader: '(v)auction',
     textDescription: '',
     labelCurrentBid: 'Current Bid',
     labelBidPrice: '$' + bids.GetHighestBid().bid,

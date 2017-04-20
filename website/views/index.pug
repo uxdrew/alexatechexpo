@@ -6,21 +6,22 @@ block content
       #sidebar-wrapper
         ul.sidebar-nav
           li.sidebar-brand
-                | Vauction Vadmin
+                
           li
             a#end-auction(href='#') END AUCTION
 
     #page-content-wrapper
       .container-fluid
         .row
-          .well.text-center
-            h2#text-helper #{textJumbotronHeader}
+          .top-sticky.text-center
+            h2#text-helper.cursive #{textJumbotronHeader}
         .row
             .col-md-4.col-md-offset-4
               form#bid-form
                 .col-md-12.text-center
-                  h4 #{labelCurrentBid}
                   h1#bid-price #{labelBidPrice}
+                  h4 #{labelCurrentBid}
+                  br
                 .form-group
                   input#bid-text.form-control(type='tel')
                 .row
@@ -35,7 +36,7 @@ block content
                       button#btn.btn.btn-small(name='btnPair') Pair
               
         sticky#sticky(style='display: none')
-          p.text-center#client-id(style='font-size: 8px')
+          p.text-center#client-id(style='font-size: 10px')
       
         footer
           p.left
