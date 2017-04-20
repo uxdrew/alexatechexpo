@@ -109,6 +109,7 @@ $(function () {
             console.log(response);
             clientid = response.alexaClientId;
             $('#client-id').text("client id: " + clientid);
+            if(clientid.length > 10) str = str.substring(0,10);
             $('#passcode-form').hide();
             $('#is-paired').attr('class', 'pair-yes')
             $('#sticky').show();

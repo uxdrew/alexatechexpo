@@ -293,8 +293,9 @@ sticky {
     bottom: 50px;
     left: 0;
     width: 100%;
-    color: #fff;
-    background-color: rgba(106, 227, 204, 0.50);
+    color: #444;
+    padding: 2px;
+    background-color: rgba(106, 227, 204, 0.99);
 }
 
 footer {
