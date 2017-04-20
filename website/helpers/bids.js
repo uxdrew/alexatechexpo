@@ -72,7 +72,7 @@ module = module.exports = function (vsocketio) {
                 });
             });
 
-            req.write(JSON.stringify({ laneId: '9999', transactionAmount: bid.bid }));
+            req.write(JSON.stringify({ laneId: 9999, transactionAmount: bid.bid }));
             req.end();
         }
     };
