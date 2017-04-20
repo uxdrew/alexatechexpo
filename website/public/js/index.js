@@ -98,6 +98,11 @@ $(function () {
         console.log("Web Socket Connected - socketid: " + socket.id);
     });
 
+    socket.on('txn complete', function(msg) {
+        console.log('txn complete: ' + msg);
+        //put msg response in the receipt area
+    });
+
     $('#passcode-form').submit(function () {
         var data = { passcode: $('#txtPasscode').val(), socketid: socket.id };
 
