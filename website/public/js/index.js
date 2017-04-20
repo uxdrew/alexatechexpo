@@ -108,8 +108,8 @@ $(function () {
         $.ajax(settings).done(function (response) {
             console.log(response);
             clientid = response.alexaClientId;
-            $('#client-id').text("client id: " + clientid);
-            if(clientid.length > 10) str = str.substring(0,10);
+            if(clientid.length > 10) clientid = clientid.substring(0,30);
+            $('#client-id').text("client id: " + clientid + "...");
             $('#passcode-form').hide();
             $('#is-paired').attr('class', 'pair-yes')
             $('#sticky').show();
