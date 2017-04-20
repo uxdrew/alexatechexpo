@@ -99,8 +99,10 @@ $(function () {
     });
 
     socket.on('txn complete', function(msg) {
+        var response = JSON.parse(msg);
         console.log('txn complete: ' + msg);
         //put msg response in the receipt area
+        $('#receipt-btn').removeClass('disabled');
     });
 
     $('#passcode-form').submit(function () {
