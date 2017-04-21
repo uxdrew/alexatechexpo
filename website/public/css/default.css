@@ -133,6 +133,14 @@ hr {
     opacity: 0.75;
 }
 
+.btn-modal {
+    color: #555;
+    background-color: transparent;
+    outline: none !important;
+    border: 2px solid #555;
+    width: 100%;
+}
+
 .btn-outline {
     color: #fff;
     background-color: transparent;
@@ -171,7 +179,7 @@ hr {
 }
 
 .btn-menu {
-    color: #cc6e39;
+    color: #333;
     background-color: transparent;
     outline: none !important;
 }
@@ -267,8 +275,26 @@ label {
 
 .pair-no:before {
     font-size: 10px;
-    color: #cc6e39;
+    color: #222;
     content: 'NOT PAIRED'
+}
+
+.modal-content {
+    border-radius: 0;
+}
+
+.modal-header {
+    text-align: center;
+    background-color: #6AE3CC;
+    color: #222;
+}
+
+.modal-body {
+    color: #222;
+}
+
+.modal-footer {
+    text-align: center;
 }
 
 #messages {

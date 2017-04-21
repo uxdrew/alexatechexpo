@@ -43,7 +43,7 @@ block content
               br
               h5(style='font-size:14px; color:#222')#won-detail 
               br
-              button#receipt-btn.btn.btn-outline.disabled View Receipt
+              button#receipt-btn.btn.btn-outline.disabled(href="#myModal", data-toggle="modal") View Receipt
             
         sticky#sticky(style='display: none')
           p.text-center#client-id(style='font-size: 10px')
@@ -57,3 +57,34 @@ block content
             |  by ip engineering
           p.right
             a#menu-toggle.btn-menu(href='#menu-toggle') HIDDEN MENU
+
+            #myModal.modal.fade(tabindex="-1", role="dialog", aria-labelledby="myModalLabel", aria-hidden="true")
+              .modal-dialog
+                .modal-content
+                  .modal-header
+                    button.close(type="button", data-dismiss="modal", aria-hidden="true") &times;
+                    h3.modal-title triPOS Response
+                  .modal-body
+                    .row.text-center
+                      h4 Billed To:
+                      p Auction Winner
+                      p 555 This Way Street
+                      p Anytown, USA
+                      h4 Date
+                      p May 3, 2017
+                      h4 Order No
+                      p 0000001
+                      h4 Document No
+                      p 000000001
+                      h4 Total
+                      h2(style="color:#555") $200.00
+                      h4 Visa 
+                      p xxxx-xxxx-xxxx-1234
+                      p SUCCESS
+                      h4 Auth Code
+                      p 123456
+                      h4 Transaction ID
+                      p 00000000000000
+                      p Date / Time
+                  .modal-footer
+                    button.btn.btn-modal(type="button", data-dismiss="modal") OK
