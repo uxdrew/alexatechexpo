@@ -84,7 +84,8 @@ $(function () {
             $('#lost-div').hide();
             document.body.style.backgroundColor = "#46B29D";
             $('#text-helper').text('winner!');
-            $('#won-detail').text("We have charged $" + msg.bid + " using triPOS to the card on file");
+            // $('#won-detail').text("We have charged $" + msg.bid + " using triPOS to the card on file");
+            $('#won-detail').text("Your credit card was processed.");
         }
         else {
             //i lost!

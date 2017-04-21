@@ -46,6 +46,11 @@ input[type="color"]:focus,
     font-family: 'Amatic SC', cursive;
 }
 
+.numbers {
+    font-family: 'Changa One', cursive;
+    font-size: 76px;
+}
+
 p {
     font-weight: normal !important;
     letter-spacing: 1px;
@@ -228,7 +233,7 @@ hr {
     height: 65px;
     padding: 6px 12px;
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 400;
     text-align: center;
     color: #e1e1e1;
     background: rgba(255, 255, 255, 0.05);
