@@ -29,6 +29,11 @@ input[type="color"]:focus,
   outline: 0 none;
 }
 
+::selection {
+  color: #E37B40;
+}
+
+
 .top-sticky {
     position: fixed;
     right: 0;
@@ -131,7 +136,7 @@ hr {
     font-size: 10px;
     margin: 0;
     position: absolute;
-    right: -15px;
+    right: -10px;
     margin-left: -50%;
     transform: translate(-50%, -50%);
     opacity: 0.75;
