@@ -58,7 +58,7 @@ a {
 }
 
 a:hover {
-    color: #fff;
+    color: #e1e1e1;
     text-decoration: none;
 }
 
@@ -81,7 +81,7 @@ h1 {
 }
 
 h2 {
-    color: #fff;
+    color: #e1e1e1;
     letter-spacing: 1px;
     font-size: 41px;
     margin: 4px;
@@ -127,17 +127,25 @@ hr {
     font-size: 10px;
     margin: 0;
     position: absolute;
-    right: -25px;
+    right: -35px;
     margin-left: -50%;
     transform: translate(-50%, -50%);
     opacity: 0.75;
 }
 
-.btn-outline {
-    color: #fff;
+.btn-modal {
+    color: #555;
     background-color: transparent;
     outline: none !important;
-    border: 2px solid #fff;
+    border: 2px solid #555;
+    width: 100%;
+}
+
+.btn-outline {
+    color: #e1e1e1;
+    background-color: transparent;
+    outline: none !important;
+    border: 2px solid #e1e1e1;
 }
 
 .btn-outline:hover,
@@ -147,7 +155,7 @@ hr {
 }
 
 .btn-outline:active {
-    color: #fff;
+    color: #e1e1e1;
 }
 
 .btn-outline:disabled {
@@ -157,22 +165,26 @@ hr {
 .btn-small {
     width: 100% !important;
     height: auto !important;
-    color: #fff;
+    color: #e1e1e1;
+    font-size: 10px !important;
+    margin-top: 4px;
     background-color: transparent;
     outline: none !important;
+    opacity: 0.75;
+    letter-spacing: 1px;
 }
 
 .btn-small:hover {
     width: 100% !important;
     height: auto !important;
-    color: #cc6e39;
+    color: #F0CA4D;
     background-color: transparent;
     outline: none !important;
 }
 
 .btn-menu {
-    color: #cc6e39;
-    background-color: transparent;
+    color: #e1e1e1;
+    padding: 2px 4px;
     outline: none !important;
 }
 
@@ -218,7 +230,7 @@ hr {
     font-size: 40px;
     font-weight: 700;
     text-align: center;
-    color: #fff;
+    color: #e1e1e1;
     background: rgba(255, 255, 255, 0.05);
     background-image: none;
     border: 0 solid rgba(255, 255, 255, 0.25);
@@ -236,7 +248,7 @@ hr {
     width: 100%;
     padding: 6px 12px;
     text-align: center;
-    color: #F0CA4D;
+    color: #6AE3CC;
     background: rgba(255, 255, 255, 0.10);
     background-image: none;
     border: 0 solid rgba(255, 255, 255, 0.25);
@@ -261,14 +273,36 @@ label {
 
 .pair-yes:before {
     font-size: 10px;
-    color: #6AE3CC;
+    color: #555;
+    background-color: #6AE3CC;
+    padding: 2px 4px;
     content: 'PAIRED'
 }
 
 .pair-no:before {
     font-size: 10px;
-    color: #cc6e39;
+    color: #222;
+    background-color: #e1e1e1;
+    padding: 2px 4px;
     content: 'NOT PAIRED'
+}
+
+.modal-content {
+    border-radius: 0;
+}
+
+.modal-header {
+    text-align: center;
+    background-color: #6AE3CC;
+    color: #222;
+}
+
+.modal-body {
+    color: #222;
+}
+
+.modal-footer {
+    text-align: center;
 }
 
 #messages {
@@ -283,19 +317,20 @@ label {
 }
 
 #messages li:nth-child(odd) {
-    color: #fff;
+    color: #e1e1e1;
 }
 
 sticky {
     position: fixed;
     height: auto;
     right: 0;
-    bottom: 50px;
+    bottom: 45px;
     left: 0;
     width: 100%;
-    color: #444;
+    color: #6AE3CC;
     padding: 2px;
-    background-color: rgba(106, 227, 204, 0.99);
+    background-color: transparent;
+    /*background-color: rgba(106, 227, 204, 0.25);*/
 }
 
 footer {
