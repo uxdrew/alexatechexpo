@@ -1,6 +1,7 @@
 module = module.exports = function (vsocketio) {
     var vsocketio = vsocketio;
     var highestBid = { bid: 0.00, clientid: null, socketid: null };
+    var fiddler = require('./fiddler');
 
     return {
         NewBid: function (bid) {
@@ -34,13 +35,17 @@ module = module.exports = function (vsocketio) {
             //run txn via tripos for amount
             var http = require("https");
 
+            var postData = JSON.stringify({ laneId: "9999", transactionAmount: bid.bid.toString() });
+
             var options = {
                 "method": "POST",
-                "hostname": "triposcert.vantiv.com",
+                "hostname": "triposcert.vantiv.com/api/v1/sale",
                 "port": null,
-                "path": "/api/v1/sale",
+                //"path": "/api/v1/sale",
+                "protocol": "https:",
                 "headers": {
                     "content-type": "application/json",
+                    "content-length": Buffer.byteLength(postData),
                     "tp-application-id": "8241",
                     "tp-application-name": "triPOS.vauction.Cloud",
                     "tp-application-version": "1.0.0",
@@ -72,7 +77,7 @@ module = module.exports = function (vsocketio) {
                 });
             });
 
-            req.write(JSON.stringify({ laneId: 9999, transactionAmount: bid.bid }));
+            req.write(postData);
             req.end();
         }
     };
