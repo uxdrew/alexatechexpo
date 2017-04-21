@@ -4,3 +4,9 @@ MakeBidIntent
 (|to) (|please) (bid|bit|bed) {Bid} (|dollar|dollars|buck|bucks) (|please)
 (|to) (|please) (make a|make me a|place a|place me a) {Bid} (dollar|dollars|buck|bucks) (bid|bit|bed) (|please)
 (|to) (|please) (make a|make me a|place a|place me a) (bid|bit|bed) (of|for) {Bid} (dollar|dollars|buck|bucks) (|please)
+
+http://www.makermusings.com/amazon-echo-utterance-expander/
+
+MakeBidIntent (/to) (/please) (bid/bit/bed) {Bid} (/dollar/dollars/buck/bucks) (/please)
+MakeBidIntent (/to) (/please) (make a/make me a/place a/place me a) {Bid} (dollar/dollars/buck/bucks) (bid/bit/bed) (/please)
+MakeBidIntent (/to) (/please) (make a/make me a/place a/place me a) (bid/bit/bed) (of/for) {Bid} (dollar/dollars/buck/bucks) (/please)

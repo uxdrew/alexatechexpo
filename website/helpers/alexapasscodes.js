@@ -11,7 +11,9 @@ module = module.exports = (function () {
         GetAlexaClientId: function (passcode) {
             return Object.keys(dict).find(x => dict[x].passcode === passcode);
         },
-
+        GetSocketId: function(alexaClientId) {
+            return dict[alexaClientId].socket.id;
+        },
         LinkSocket: function(alexaClientId, socket) {
             dict[alexaClientId].socket = socket;
             console.log('socketid linked - socketid: ' + socket.id + ', clientid: ' + alexaClientId);

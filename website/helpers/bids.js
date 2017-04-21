@@ -1,5 +1,4 @@
-module = module.exports = function (vsocketio) {
-    var vsocketio = vsocketio;
+module = module.exports = function (vsocketio, alexapasscodes) {
     var highestBid = { bid: 0.00, clientid: null, socketid: null };
     var fiddler = require('./fiddler');
 
@@ -9,6 +8,10 @@ module = module.exports = function (vsocketio) {
 
             if (!bid.clientid && !bid.socketid)
                 return false;
+
+            if(bid.clientid){
+                bid.socketid = alexapasscodes.GetSocketId(bid.clientid);
+            }
 
             if (parseInt(bid.bid) > parseInt(highestBid.bid)) {
                 highestBid = bid;

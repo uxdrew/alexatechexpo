@@ -5,7 +5,7 @@ var http = require('http').Server(app);
 var alexaPasscodes = require('./helpers/alexapasscodes.js');
 var vsocketio = require('./socketio/vsocketio.js')(http, alexaPasscodes);
 var bodyParser = require('body-parser');
-var bids = require('./helpers/bids.js')(vsocketio);
+var bids = require('./helpers/bids.js')(vsocketio, alexaPasscodes);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
