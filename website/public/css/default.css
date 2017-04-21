@@ -104,7 +104,7 @@ h5 {
 }
 
 hr {
-    opacity: 0.20 !important;
+    margin: 2px;
 }
 
 .left {
@@ -141,7 +141,7 @@ hr {
     color: #555;
     background-color: transparent;
     outline: none !important;
-    border: 2px solid #555;
+    border: 0 solid #555;
     width: 100%;
 }
 
@@ -318,7 +318,6 @@ label {
 
 .modal-header {
     text-align: center;
-    background-color: #6AE3CC;
     color: #222;
 }
 

@@ -40,7 +40,8 @@ block content
               h4 You lost. Refresh browser to play again.
             #won-div(style='display: none')
               h3.numbers Congrats!
-              h5(style='font-size:14px; color:#222')#won-detail 
+              br
+              h4#won-detail 
               #progress-bar.progress
                 .progress-bar.progress-bar-striped.active(role='progressbar', aria-valuemin='0', aria-valuemax='100', style='width:100%')
               br
@@ -64,25 +65,33 @@ block content
                 .modal-content
                   .modal-header
                     button.close(type="button", data-dismiss="modal", aria-hidden="true") &times;
-                    h3.modal-title triPOS Response
+                    h3.modal-title
+                      img(src='../images/triPOSLogo.png', alt='', height="24px")
                   .modal-body
                     .row.text-center
-                      h4 Billed To:
+                      p#receipt-statuscode(style="color:red; text-transform:uppercase") statusCode
+                      br
+                      strong Billed To:
                       p Auction Winner
                       p 555 This Way Street
                       p Anytown, USA
-                      h4 Date
+                      hr
+                      strong Date
                       p#receipt-date May 3, 2017
-                      h4 Merchant ID
+                      hr
+                      strong Merchant ID
                       p#receipt-merchantid merchantId
-                      h4 Total
-                      h2#receipt-amount(style="color:#555") $subTotalAmount
-                      h4#receipt-cardbrand cardLogo 
+                      hr
+                      strong Total
+                      h2#receipt-amount(style="color:#555; font-size: 42px;") $subTotalAmount
+                      hr
+                      strong#receipt-cardbrand cardLogo 
                       p#receipt-cardnum accountNumber
-                      p#receipt-statuscode statusCode
-                      h4 Auth Code
+                      hr
+                      strong Auth Code
                       p#receipt-authcode approvalNumber
-                      h4 Transaction ID
+                      hr
+                      strong Transaction ID
                       p#receipt-txnid transactionId
                   .modal-footer
                     button.btn.btn-modal(type="button", data-dismiss="modal") OK
