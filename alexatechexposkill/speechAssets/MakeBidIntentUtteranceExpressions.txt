@@ -1,0 +1,6 @@
+http://alexa-utter-gen.paperplane.io/
+MakeBidIntent
+
+(|to) (|please) (bid|bit|bed) {Bid} (|dollar|dollars|buck|bucks) (|please)
+(|to) (|please) (make a|make me a|place a|place me a) {Bid} (dollar|dollars|buck|bucks) (bid|bit|bed) (|please)
+(|to) (|please) (make a|make me a|place a|place me a) (bid|bit|bed) (of|for) {Bid} (dollar|dollars|buck|bucks) (|please)
