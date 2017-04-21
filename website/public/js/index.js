@@ -113,6 +113,7 @@ $(function () {
 
         //put msg response in the receipt area
         $('#receipt-btn').removeClass('disabled');
+        $('#progress-bar').hide();
 
         //set modal form values
         $('#receipt-date').text(datetime);

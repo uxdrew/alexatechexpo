@@ -163,10 +163,6 @@ hr {
     color: #e1e1e1;
 }
 
-.btn-outline:disabled {
-    visibility: hidden;
-}
-
 .btn-small {
     width: 100% !important;
     height: auto !important;
