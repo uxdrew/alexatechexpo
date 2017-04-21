@@ -85,7 +85,7 @@ $(function () {
             document.body.style.backgroundColor = "#46B29D";
             $('#text-helper').text('winner!');
             // $('#won-detail').text("We have charged $" + msg.bid + " using triPOS to the card on file");
-            $('#won-detail').text("Your credit card was processed.");
+            
         }
         else {
             //i lost!
@@ -114,6 +114,7 @@ $(function () {
         //put msg response in the receipt area
         $('#receipt-btn').removeClass('disabled');
         $('#progress-bar').hide();
+        $('#won-detail').text("Your credit card was processed.");
 
         //set modal form values
         $('#receipt-date').text(datetime);
