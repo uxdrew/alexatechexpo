@@ -122,7 +122,7 @@ function makeBidResponse(userId, intent, callback) {
     var sessionAttributes = {};
     var repromptText = null;
 
-    var cardTitle = "Get Passcode";
+    var cardTitle = "Make Bid";
 
     makeBid(userId, intent.slots.Bid.value, function (result, message) {
 

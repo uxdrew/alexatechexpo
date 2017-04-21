@@ -71,20 +71,17 @@ block content
                       p 555 This Way Street
                       p Anytown, USA
                       h4 Date
-                      p May 3, 2017
-                      h4 Order No
-                      p 0000001
-                      h4 Document No
-                      p 000000001
+                      p#receipt-date May 3, 2017
+                      h4 Merchant ID
+                      p#receipt-merchantid merchantId
                       h4 Total
-                      h2(style="color:#555") $200.00
-                      h4 Visa 
-                      p xxxx-xxxx-xxxx-1234
-                      p SUCCESS
+                      h2#receipt-amount(style="color:#555") $subTotalAmount
+                      h4#receipt-cardbrand cardLogo 
+                      p#receipt-cardnum accountNumber
+                      p#receipt-statuscode statusCode
                       h4 Auth Code
-                      p 123456
+                      p#receipt-authcode approvalNumber
                       h4 Transaction ID
-                      p 00000000000000
-                      p Date / Time
+                      p#receipt-txnid transactionId
                   .modal-footer
                     button.btn.btn-modal(type="button", data-dismiss="modal") OK

@@ -99,11 +99,30 @@ $(function () {
         console.log("Web Socket Connected - socketid: " + socket.id);
     });
 
-    socket.on('txn complete', function(msg) {
+    socket.on('txn complete', function (msg) {
         var response = JSON.parse(msg);
         console.log('txn complete: ' + msg);
+
+        var currentdate = new Date();
+        var datetime = (currentdate.getMonth() + 1) + "/"
+            + currentdate.getDate() + "/"
+            + currentdate.getFullYear() + " @ "
+            + currentdate.getHours() + ":"
+            + currentdate.getMinutes() + ":"
+            + currentdate.getSeconds();
+
         //put msg response in the receipt area
         $('#receipt-btn').removeClass('disabled');
+
+        //set modal form values
+        $('#receipt-date').text(datetime);
+        $('#receipt-merchantid').text(response.merchantId);
+        $('#receipt-amount').text('$' + response.subTotalAmount);
+        $('#receipt-cardbrand').text(response.cardLogo);
+        $('#receipt-cardnum').text(response.accountNumber);
+        $('#receipt-statuscode').text(response.statusCode);
+        $('#receipt-authcode').text(response.approvalNumber);
+        $('#receipt-txnid').text(response.transactionId);
     });
 
     $('#passcode-form').submit(function () {
@@ -125,8 +144,9 @@ $(function () {
         $.ajax(settings).done(function (response) {
             console.log(response);
             clientid = response.alexaClientId;
-            if(clientid.length > 10) clientid = clientid.substring(0,30);
-            $('#client-id').text("client id: " + clientid + "...");
+            var tempClientId = clientid;
+            if (clientid.length > 30) tempClientId = clientid.substring(0, 30);
+            $('#client-id').text("client id: " + tempClientId + "...");
             $('#passcode-form').hide();
             $('#is-paired').attr('class', 'pair-yes')
             $('#sticky').show();
@@ -151,9 +171,5 @@ $(function () {
         $.ajax(settings).done(function (response) {
             console.log(response);
         });
-    });
-
-    $('#receipt-btn').click(function() {
-
     });
 });

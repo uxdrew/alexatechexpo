@@ -1,22 +1,56 @@
 GetPasscodeIntent get me a passcode
+GetPasscodeIntent get me a passcode please
 GetPasscodeIntent generate a passcode
 GetPasscodeIntent generate me a passcode
 GetPasscodeIntent make me a passcode
 GetPasscodeIntent what's my passcode
 GetPasscodeIntent what is my passcode
+GetPasscodeIntent passcode
+GetPasscodeIntent passcode please
 
+MakeBidIntent to please make a {Bid} dollar bid
+MakeBidIntent to please make a {Bid} dollars bid
+MakeBidIntent to make a {Bid} dollar bid please
+MakeBidIntent to make a {Bid} dollars bid please
 MakeBidIntent to make a {Bid} dollar bid
+MakeBidIntent to make a {Bid} dollars bid
 MakeBidIntent to make a {Bid} buck bid
+MakeBidIntent to make a {Bid} bucks bid
 MakeBidIntent to make me a {Bid} dollar bid
+MakeBidIntent to make me a {Bid} dollars bid
 MakeBidIntent to make me a {Bid} dollar bid on the item
 MakeBidIntent to make me a {Bid} dollar bid on the sale
+MakeBidIntent to bid {Bid} dollar
 MakeBidIntent to bid {Bid} dollars
+MakeBidIntent to bid {Bid} buck
+MakeBidIntent to bid {Bid} bucks
+MakeBidIntent to bid {Bid} dollar on the item
 MakeBidIntent to bid {Bid} dollars on the item
 MakeBidIntent bid {Bid} dollars
+MakeBidIntent bid {Bid} dollar
 MakeBidIntent bid {Bid}
+MakeBidIntent bed {Bid}
+MakeBidIntent bed {Bid} dollar
+MakeBidIntent bed {Bid} dollars
+MakeBidIntent bit {Bid}
+MakeBidIntent bit {Bid} dollar
+MakeBidIntent bit {Bid} dollars
+MakeBidIntent bid {Bid} buck
 MakeBidIntent bid {Bid} bucks
+MakeBidIntent to make a bid for {Bid} buck
 MakeBidIntent to make a bid for {Bid} bucks
+MakeBidIntent to make a bid for {Bid} dollar
 MakeBidIntent to make a bid for {Bid} dollars
+MakeBidIntent to make a bid of {Bid} dollar
+MakeBidIntent to make a bid of {Bid} dollars
+MakeBidIntent to place a bid of {Bid} dollar
+MakeBidIntent to place a bid of {Bid} dollars
+MakeBidIntent to place a bid of {Bid} buck
+MakeBidIntent to place a bid of {Bid} bucks
+MakeBidIntent to place a {Bid} dollar bid
+MakeBidIntent to place a {Bid} dollars bid
+MakeBidIntent to place a {Bid} buck bid
+MakeBidIntent to place a {Bid} bucks bid
 
 GetHighestBidIntent for the highest bid
 GetHighestBidIntent for the current bid

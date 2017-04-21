@@ -39,10 +39,10 @@ module = module.exports = function (vsocketio) {
 
             var options = {
                 "method": "POST",
-                "hostname": "triposcert.vantiv.com/api/v1/sale",
+                "hostname": "triposcert.vantiv.com",
                 "port": null,
-                //"path": "/api/v1/sale",
-                "protocol": "https:",
+                "path": "/api/v1/sale",
+                //"protocol": "https:",
                 "headers": {
                     "content-type": "application/json",
                     "content-length": Buffer.byteLength(postData),
