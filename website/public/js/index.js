@@ -103,21 +103,13 @@ $(function () {
         var response = JSON.parse(msg);
         console.log('txn complete: ' + msg);
 
-        var currentdate = new Date();
-        var datetime = (currentdate.getMonth() + 1) + "/"
-            + currentdate.getDate() + "/"
-            + currentdate.getFullYear() + " @ "
-            + currentdate.getHours() + ":"
-            + currentdate.getMinutes() + ":"
-            + currentdate.getSeconds();
-
         //put msg response in the receipt area
         $('#receipt-btn').removeClass('disabled');
         $('#progress-bar').hide();
         $('#won-detail').text("Your credit card was processed.");
 
         //set modal form values
-        $('#receipt-date').text(datetime);
+        $('#receipt-date').text(new Date().toLocaleString());
         $('#receipt-merchantid').text(response.merchantId);
         $('#receipt-amount').text('$' + response.subTotalAmount);
         $('#receipt-cardbrand').text(response.cardLogo);

@@ -1,12 +1,47 @@
+GetPasscodeIntent generate me a passcode
+GetPasscodeIntent generate me a passcode please
+GetPasscodeIntent generate me a pin
+GetPasscodeIntent generate me a pin please
 GetPasscodeIntent get me a passcode
 GetPasscodeIntent get me a passcode please
-GetPasscodeIntent generate a passcode
-GetPasscodeIntent generate me a passcode
+GetPasscodeIntent get me a pin
+GetPasscodeIntent get me a pin please
 GetPasscodeIntent make me a passcode
-GetPasscodeIntent what's my passcode
-GetPasscodeIntent what is my passcode
+GetPasscodeIntent make me a passcode please
+GetPasscodeIntent make me a pin
+GetPasscodeIntent make me a pin please
 GetPasscodeIntent passcode
 GetPasscodeIntent passcode please
+GetPasscodeIntent pin
+GetPasscodeIntent pin please
+GetPasscodeIntent please generate me a passcode
+GetPasscodeIntent please generate me a passcode please
+GetPasscodeIntent please generate me a pin
+GetPasscodeIntent please generate me a pin please
+GetPasscodeIntent please get me a passcode
+GetPasscodeIntent please get me a passcode please
+GetPasscodeIntent please get me a pin
+GetPasscodeIntent please get me a pin please
+GetPasscodeIntent please make me a passcode
+GetPasscodeIntent please make me a passcode please
+GetPasscodeIntent please make me a pin
+GetPasscodeIntent please make me a pin please
+GetPasscodeIntent please what is my passcode
+GetPasscodeIntent please what is my passcode please
+GetPasscodeIntent please what is my pin
+GetPasscodeIntent please what is my pin please
+GetPasscodeIntent please what's my passcode
+GetPasscodeIntent please what's my passcode please
+GetPasscodeIntent please what's my pin
+GetPasscodeIntent please what's my pin please
+GetPasscodeIntent what is my passcode
+GetPasscodeIntent what is my passcode please
+GetPasscodeIntent what is my pin
+GetPasscodeIntent what is my pin please
+GetPasscodeIntent what's my passcode
+GetPasscodeIntent what's my passcode please
+GetPasscodeIntent what's my pin
+GetPasscodeIntent what's my pin please
 
 GetHighestBidIntent for the highest bid
 GetHighestBidIntent for the current bid
@@ -651,6 +686,150 @@ MakeBidIntent please place me a {Bid} dollars bid
 MakeBidIntent please place me a {Bid} dollars bid please
 MakeBidIntent please place me a {Bid} dollars bit
 MakeBidIntent please place me a {Bid} dollars bit please
+MakeBidIntent please put in a bed for {Bid} buck
+MakeBidIntent please put in a bed for {Bid} buck please
+MakeBidIntent please put in a bed for {Bid} bucks
+MakeBidIntent please put in a bed for {Bid} bucks please
+MakeBidIntent please put in a bed for {Bid} dollar
+MakeBidIntent please put in a bed for {Bid} dollar please
+MakeBidIntent please put in a bed for {Bid} dollars
+MakeBidIntent please put in a bed for {Bid} dollars please
+MakeBidIntent please put in a bed of {Bid} buck
+MakeBidIntent please put in a bed of {Bid} buck please
+MakeBidIntent please put in a bed of {Bid} bucks
+MakeBidIntent please put in a bed of {Bid} bucks please
+MakeBidIntent please put in a bed of {Bid} dollar
+MakeBidIntent please put in a bed of {Bid} dollar please
+MakeBidIntent please put in a bed of {Bid} dollars
+MakeBidIntent please put in a bed of {Bid} dollars please
+MakeBidIntent please put in a bid for {Bid} buck
+MakeBidIntent please put in a bid for {Bid} buck please
+MakeBidIntent please put in a bid for {Bid} bucks
+MakeBidIntent please put in a bid for {Bid} bucks please
+MakeBidIntent please put in a bid for {Bid} dollar
+MakeBidIntent please put in a bid for {Bid} dollar please
+MakeBidIntent please put in a bid for {Bid} dollars
+MakeBidIntent please put in a bid for {Bid} dollars please
+MakeBidIntent please put in a bid of {Bid} buck
+MakeBidIntent please put in a bid of {Bid} buck please
+MakeBidIntent please put in a bid of {Bid} bucks
+MakeBidIntent please put in a bid of {Bid} bucks please
+MakeBidIntent please put in a bid of {Bid} dollar
+MakeBidIntent please put in a bid of {Bid} dollar please
+MakeBidIntent please put in a bid of {Bid} dollars
+MakeBidIntent please put in a bid of {Bid} dollars please
+MakeBidIntent please put in a bit for {Bid} buck
+MakeBidIntent please put in a bit for {Bid} buck please
+MakeBidIntent please put in a bit for {Bid} bucks
+MakeBidIntent please put in a bit for {Bid} bucks please
+MakeBidIntent please put in a bit for {Bid} dollar
+MakeBidIntent please put in a bit for {Bid} dollar please
+MakeBidIntent please put in a bit for {Bid} dollars
+MakeBidIntent please put in a bit for {Bid} dollars please
+MakeBidIntent please put in a bit of {Bid} buck
+MakeBidIntent please put in a bit of {Bid} buck please
+MakeBidIntent please put in a bit of {Bid} bucks
+MakeBidIntent please put in a bit of {Bid} bucks please
+MakeBidIntent please put in a bit of {Bid} dollar
+MakeBidIntent please put in a bit of {Bid} dollar please
+MakeBidIntent please put in a bit of {Bid} dollars
+MakeBidIntent please put in a bit of {Bid} dollars please
+MakeBidIntent please put in a {Bid} buck bed
+MakeBidIntent please put in a {Bid} buck bed please
+MakeBidIntent please put in a {Bid} buck bid
+MakeBidIntent please put in a {Bid} buck bid please
+MakeBidIntent please put in a {Bid} buck bit
+MakeBidIntent please put in a {Bid} buck bit please
+MakeBidIntent please put in a {Bid} bucks bed
+MakeBidIntent please put in a {Bid} bucks bed please
+MakeBidIntent please put in a {Bid} bucks bid
+MakeBidIntent please put in a {Bid} bucks bid please
+MakeBidIntent please put in a {Bid} bucks bit
+MakeBidIntent please put in a {Bid} bucks bit please
+MakeBidIntent please put in a {Bid} dollar bed
+MakeBidIntent please put in a {Bid} dollar bed please
+MakeBidIntent please put in a {Bid} dollar bid
+MakeBidIntent please put in a {Bid} dollar bid please
+MakeBidIntent please put in a {Bid} dollar bit
+MakeBidIntent please put in a {Bid} dollar bit please
+MakeBidIntent please put in a {Bid} dollars bed
+MakeBidIntent please put in a {Bid} dollars bed please
+MakeBidIntent please put in a {Bid} dollars bid
+MakeBidIntent please put in a {Bid} dollars bid please
+MakeBidIntent please put in a {Bid} dollars bit
+MakeBidIntent please put in a {Bid} dollars bit please
+MakeBidIntent put in a bed for {Bid} buck
+MakeBidIntent put in a bed for {Bid} buck please
+MakeBidIntent put in a bed for {Bid} bucks
+MakeBidIntent put in a bed for {Bid} bucks please
+MakeBidIntent put in a bed for {Bid} dollar
+MakeBidIntent put in a bed for {Bid} dollar please
+MakeBidIntent put in a bed for {Bid} dollars
+MakeBidIntent put in a bed for {Bid} dollars please
+MakeBidIntent put in a bed of {Bid} buck
+MakeBidIntent put in a bed of {Bid} buck please
+MakeBidIntent put in a bed of {Bid} bucks
+MakeBidIntent put in a bed of {Bid} bucks please
+MakeBidIntent put in a bed of {Bid} dollar
+MakeBidIntent put in a bed of {Bid} dollar please
+MakeBidIntent put in a bed of {Bid} dollars
+MakeBidIntent put in a bed of {Bid} dollars please
+MakeBidIntent put in a bid for {Bid} buck
+MakeBidIntent put in a bid for {Bid} buck please
+MakeBidIntent put in a bid for {Bid} bucks
+MakeBidIntent put in a bid for {Bid} bucks please
+MakeBidIntent put in a bid for {Bid} dollar
+MakeBidIntent put in a bid for {Bid} dollar please
+MakeBidIntent put in a bid for {Bid} dollars
+MakeBidIntent put in a bid for {Bid} dollars please
+MakeBidIntent put in a bid of {Bid} buck
+MakeBidIntent put in a bid of {Bid} buck please
+MakeBidIntent put in a bid of {Bid} bucks
+MakeBidIntent put in a bid of {Bid} bucks please
+MakeBidIntent put in a bid of {Bid} dollar
+MakeBidIntent put in a bid of {Bid} dollar please
+MakeBidIntent put in a bid of {Bid} dollars
+MakeBidIntent put in a bid of {Bid} dollars please
+MakeBidIntent put in a bit for {Bid} buck
+MakeBidIntent put in a bit for {Bid} buck please
+MakeBidIntent put in a bit for {Bid} bucks
+MakeBidIntent put in a bit for {Bid} bucks please
+MakeBidIntent put in a bit for {Bid} dollar
+MakeBidIntent put in a bit for {Bid} dollar please
+MakeBidIntent put in a bit for {Bid} dollars
+MakeBidIntent put in a bit for {Bid} dollars please
+MakeBidIntent put in a bit of {Bid} buck
+MakeBidIntent put in a bit of {Bid} buck please
+MakeBidIntent put in a bit of {Bid} bucks
+MakeBidIntent put in a bit of {Bid} bucks please
+MakeBidIntent put in a bit of {Bid} dollar
+MakeBidIntent put in a bit of {Bid} dollar please
+MakeBidIntent put in a bit of {Bid} dollars
+MakeBidIntent put in a bit of {Bid} dollars please
+MakeBidIntent put in a {Bid} buck bed
+MakeBidIntent put in a {Bid} buck bed please
+MakeBidIntent put in a {Bid} buck bid
+MakeBidIntent put in a {Bid} buck bid please
+MakeBidIntent put in a {Bid} buck bit
+MakeBidIntent put in a {Bid} buck bit please
+MakeBidIntent put in a {Bid} bucks bed
+MakeBidIntent put in a {Bid} bucks bed please
+MakeBidIntent put in a {Bid} bucks bid
+MakeBidIntent put in a {Bid} bucks bid please
+MakeBidIntent put in a {Bid} bucks bit
+MakeBidIntent put in a {Bid} bucks bit please
+MakeBidIntent put in a {Bid} dollar bed
+MakeBidIntent put in a {Bid} dollar bed please
+MakeBidIntent put in a {Bid} dollar bid
+MakeBidIntent put in a {Bid} dollar bid please
+MakeBidIntent put in a {Bid} dollar bit
+MakeBidIntent put in a {Bid} dollar bit please
+MakeBidIntent put in a {Bid} dollars bed
+MakeBidIntent put in a {Bid} dollars bed please
+MakeBidIntent put in a {Bid} dollars bid
+MakeBidIntent put in a {Bid} dollars bid please
+MakeBidIntent put in a {Bid} dollars bit
+MakeBidIntent put in a {Bid} dollars bit please
 MakeBidIntent to bed {Bid}
 MakeBidIntent to bed {Bid} buck
 MakeBidIntent to bed {Bid} buck please
@@ -1287,3 +1466,147 @@ MakeBidIntent to please place me a {Bid} dollars bid
 MakeBidIntent to please place me a {Bid} dollars bid please
 MakeBidIntent to please place me a {Bid} dollars bit
 MakeBidIntent to please place me a {Bid} dollars bit please
+MakeBidIntent to please put in a bed for {Bid} buck
+MakeBidIntent to please put in a bed for {Bid} buck please
+MakeBidIntent to please put in a bed for {Bid} bucks
+MakeBidIntent to please put in a bed for {Bid} bucks please
+MakeBidIntent to please put in a bed for {Bid} dollar
+MakeBidIntent to please put in a bed for {Bid} dollar please
+MakeBidIntent to please put in a bed for {Bid} dollars
+MakeBidIntent to please put in a bed for {Bid} dollars please
+MakeBidIntent to please put in a bed of {Bid} buck
+MakeBidIntent to please put in a bed of {Bid} buck please
+MakeBidIntent to please put in a bed of {Bid} bucks
+MakeBidIntent to please put in a bed of {Bid} bucks please
+MakeBidIntent to please put in a bed of {Bid} dollar
+MakeBidIntent to please put in a bed of {Bid} dollar please
+MakeBidIntent to please put in a bed of {Bid} dollars
+MakeBidIntent to please put in a bed of {Bid} dollars please
+MakeBidIntent to please put in a bid for {Bid} buck
+MakeBidIntent to please put in a bid for {Bid} buck please
+MakeBidIntent to please put in a bid for {Bid} bucks
+MakeBidIntent to please put in a bid for {Bid} bucks please
+MakeBidIntent to please put in a bid for {Bid} dollar
+MakeBidIntent to please put in a bid for {Bid} dollar please
+MakeBidIntent to please put in a bid for {Bid} dollars
+MakeBidIntent to please put in a bid for {Bid} dollars please
+MakeBidIntent to please put in a bid of {Bid} buck
+MakeBidIntent to please put in a bid of {Bid} buck please
+MakeBidIntent to please put in a bid of {Bid} bucks
+MakeBidIntent to please put in a bid of {Bid} bucks please
+MakeBidIntent to please put in a bid of {Bid} dollar
+MakeBidIntent to please put in a bid of {Bid} dollar please
+MakeBidIntent to please put in a bid of {Bid} dollars
+MakeBidIntent to please put in a bid of {Bid} dollars please
+MakeBidIntent to please put in a bit for {Bid} buck
+MakeBidIntent to please put in a bit for {Bid} buck please
+MakeBidIntent to please put in a bit for {Bid} bucks
+MakeBidIntent to please put in a bit for {Bid} bucks please
+MakeBidIntent to please put in a bit for {Bid} dollar
+MakeBidIntent to please put in a bit for {Bid} dollar please
+MakeBidIntent to please put in a bit for {Bid} dollars
+MakeBidIntent to please put in a bit for {Bid} dollars please
+MakeBidIntent to please put in a bit of {Bid} buck
+MakeBidIntent to please put in a bit of {Bid} buck please
+MakeBidIntent to please put in a bit of {Bid} bucks
+MakeBidIntent to please put in a bit of {Bid} bucks please
+MakeBidIntent to please put in a bit of {Bid} dollar
+MakeBidIntent to please put in a bit of {Bid} dollar please
+MakeBidIntent to please put in a bit of {Bid} dollars
+MakeBidIntent to please put in a bit of {Bid} dollars please
+MakeBidIntent to please put in a {Bid} buck bed
+MakeBidIntent to please put in a {Bid} buck bed please
+MakeBidIntent to please put in a {Bid} buck bid
+MakeBidIntent to please put in a {Bid} buck bid please
+MakeBidIntent to please put in a {Bid} buck bit
+MakeBidIntent to please put in a {Bid} buck bit please
+MakeBidIntent to please put in a {Bid} bucks bed
+MakeBidIntent to please put in a {Bid} bucks bed please
+MakeBidIntent to please put in a {Bid} bucks bid
+MakeBidIntent to please put in a {Bid} bucks bid please
+MakeBidIntent to please put in a {Bid} bucks bit
+MakeBidIntent to please put in a {Bid} bucks bit please
+MakeBidIntent to please put in a {Bid} dollar bed
+MakeBidIntent to please put in a {Bid} dollar bed please
+MakeBidIntent to please put in a {Bid} dollar bid
+MakeBidIntent to please put in a {Bid} dollar bid please
+MakeBidIntent to please put in a {Bid} dollar bit
+MakeBidIntent to please put in a {Bid} dollar bit please
+MakeBidIntent to please put in a {Bid} dollars bed
+MakeBidIntent to please put in a {Bid} dollars bed please
+MakeBidIntent to please put in a {Bid} dollars bid
+MakeBidIntent to please put in a {Bid} dollars bid please
+MakeBidIntent to please put in a {Bid} dollars bit
+MakeBidIntent to please put in a {Bid} dollars bit please
+MakeBidIntent to put in a bed for {Bid} buck
+MakeBidIntent to put in a bed for {Bid} buck please
+MakeBidIntent to put in a bed for {Bid} bucks
+MakeBidIntent to put in a bed for {Bid} bucks please
+MakeBidIntent to put in a bed for {Bid} dollar
+MakeBidIntent to put in a bed for {Bid} dollar please
+MakeBidIntent to put in a bed for {Bid} dollars
+MakeBidIntent to put in a bed for {Bid} dollars please
+MakeBidIntent to put in a bed of {Bid} buck
+MakeBidIntent to put in a bed of {Bid} buck please
+MakeBidIntent to put in a bed of {Bid} bucks
+MakeBidIntent to put in a bed of {Bid} bucks please
+MakeBidIntent to put in a bed of {Bid} dollar
+MakeBidIntent to put in a bed of {Bid} dollar please
+MakeBidIntent to put in a bed of {Bid} dollars
+MakeBidIntent to put in a bed of {Bid} dollars please
+MakeBidIntent to put in a bid for {Bid} buck
+MakeBidIntent to put in a bid for {Bid} buck please
+MakeBidIntent to put in a bid for {Bid} bucks
+MakeBidIntent to put in a bid for {Bid} bucks please
+MakeBidIntent to put in a bid for {Bid} dollar
+MakeBidIntent to put in a bid for {Bid} dollar please
+MakeBidIntent to put in a bid for {Bid} dollars
+MakeBidIntent to put in a bid for {Bid} dollars please
+MakeBidIntent to put in a bid of {Bid} buck
+MakeBidIntent to put in a bid of {Bid} buck please
+MakeBidIntent to put in a bid of {Bid} bucks
+MakeBidIntent to put in a bid of {Bid} bucks please
+MakeBidIntent to put in a bid of {Bid} dollar
+MakeBidIntent to put in a bid of {Bid} dollar please
+MakeBidIntent to put in a bid of {Bid} dollars
+MakeBidIntent to put in a bid of {Bid} dollars please
+MakeBidIntent to put in a bit for {Bid} buck
+MakeBidIntent to put in a bit for {Bid} buck please
+MakeBidIntent to put in a bit for {Bid} bucks
+MakeBidIntent to put in a bit for {Bid} bucks please
+MakeBidIntent to put in a bit for {Bid} dollar
+MakeBidIntent to put in a bit for {Bid} dollar please
+MakeBidIntent to put in a bit for {Bid} dollars
+MakeBidIntent to put in a bit for {Bid} dollars please
+MakeBidIntent to put in a bit of {Bid} buck
+MakeBidIntent to put in a bit of {Bid} buck please
+MakeBidIntent to put in a bit of {Bid} bucks
+MakeBidIntent to put in a bit of {Bid} bucks please
+MakeBidIntent to put in a bit of {Bid} dollar
+MakeBidIntent to put in a bit of {Bid} dollar please
+MakeBidIntent to put in a bit of {Bid} dollars
+MakeBidIntent to put in a bit of {Bid} dollars please
+MakeBidIntent to put in a {Bid} buck bed
+MakeBidIntent to put in a {Bid} buck bed please
+MakeBidIntent to put in a {Bid} buck bid
+MakeBidIntent to put in a {Bid} buck bid please
+MakeBidIntent to put in a {Bid} buck bit
+MakeBidIntent to put in a {Bid} buck bit please
+MakeBidIntent to put in a {Bid} bucks bed
+MakeBidIntent to put in a {Bid} bucks bed please
+MakeBidIntent to put in a {Bid} bucks bid
+MakeBidIntent to put in a {Bid} bucks bid please
+MakeBidIntent to put in a {Bid} bucks bit
+MakeBidIntent to put in a {Bid} bucks bit please
+MakeBidIntent to put in a {Bid} dollar bed
+MakeBidIntent to put in a {Bid} dollar bed please
+MakeBidIntent to put in a {Bid} dollar bid
+MakeBidIntent to put in a {Bid} dollar bid please
+MakeBidIntent to put in a {Bid} dollar bit
+MakeBidIntent to put in a {Bid} dollar bit please
+MakeBidIntent to put in a {Bid} dollars bed
+MakeBidIntent to put in a {Bid} dollars bed please
+MakeBidIntent to put in a {Bid} dollars bid
+MakeBidIntent to put in a {Bid} dollars bid please
+MakeBidIntent to put in a {Bid} dollars bit
+MakeBidIntent to put in a {Bid} dollars bit please
