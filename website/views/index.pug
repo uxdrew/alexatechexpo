@@ -12,6 +12,8 @@ block content
 
     #page-content-wrapper
       .container-fluid
+        .row#bid-history.sidebar1Wrapper(style='display:none')
+           ol
         .row
           .top-sticky.text-center
             h2#text-helper.cursive #{textJumbotronHeader}
@@ -26,7 +28,7 @@ block content
                   input#bid-text.form-control(type='tel')
                 .row
                   .col-md-12.text-center
-                    button#btn-bid.btn.btn-outline #{btnLabelBid}        
+                    button#btn-bid.btn.btn-outline #{btnLabelBid}    
               .row
                 .col-md-4.col-md-offset-4.col-xs-4.col-xs-offset-4 
                   form#passcode-form(style="display: none")

@@ -142,6 +142,21 @@ hr {
     opacity: 0.75;
 }
 
+.sidebar1Wrapper {
+   position: fixed;
+   top: 100px;
+   right: 25px;
+   overflow-y: scroll;
+   height: auto;
+   font-size: 12px;
+   opacity: 0.5;
+   padding: 5px;
+}
+
+li {
+    list-style-type: none;
+}
+
 .btn-modal {
     color: #555;
     background-color: transparent;

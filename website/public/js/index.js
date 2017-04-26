@@ -42,6 +42,10 @@ $(function () {
         console.log(msg);
         lastbid = msg;
         $('#bid-price').text("$" + msg.bid);
+        $('#bid-history').show();
+        $('#bid-history').ready(function(){
+        $("ol").append($('<li><hr>').text("$" + msg.bid));
+    });
 
         //check if either the socketid matches this session or that the clientid matches
         if ((msg.socketid && msg.socketid == socket.id) || (msg.clientid && msg.clientid == clientid)) {
@@ -158,6 +162,7 @@ $(function () {
 
         return false;
     });
+
 
     $('#end-auction').click(function () {
         var settings = {
