@@ -62,12 +62,13 @@ $(function () {
         else {
             //bid isn't mine, i'm losing :(
             //page changes here
-            document.body.style.backgroundColor = "#DE5B49";
+            document.body.style.backgroundColor = "#b1483a";
             $('#text-how').text('');
             $('#text-helper').text('bid again! :o');
             $('#btn-bid').show();
             var snd = new Audio("sounds/wahWah.wav"); // buffers automatically when created
             snd.play();
+            snd.playbackRate = 2.5;
         }
     });
 
