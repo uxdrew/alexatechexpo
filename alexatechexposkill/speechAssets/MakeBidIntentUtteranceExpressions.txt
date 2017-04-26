@@ -11,5 +11,5 @@ MakeBidIntent (/to) (/please) (bid/bit/bed) {Bid} (/dollar/dollars/buck/bucks) (
 MakeBidIntent (/to) (/please) (make a/make me a/place a/place me a/put in a) {Bid} (dollar/dollars/buck/bucks) (bid/bit/bed) (/please)
 MakeBidIntent (/to) (/please) (make a/make me a/place a/place me a/put in a) (bid/bit/bed) (of/for) {Bid} (dollar/dollars/buck/bucks) (/please)
 
-GetPasscodeIntent (/please) (get me a/generate me a/make me a/what's my/what is my) (passcode/pin) (/please)
-GetPasscodeIntent (passcode/pin) (/please)
+GetPasscodeIntent (/please) (get me a/generate me a/make me a/what's my/what is my/for a) (passcode/pin/pin code) (/please)
+GetPasscodeIntent (passcode/pin/pin code) (/please)
