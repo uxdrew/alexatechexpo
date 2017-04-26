@@ -1,46 +1,80 @@
+GetPasscodeIntent for a passcode
+GetPasscodeIntent for a passcode please
+GetPasscodeIntent for a pin
+GetPasscodeIntent for a pin code
+GetPasscodeIntent for a pin code please
+GetPasscodeIntent for a pin please
 GetPasscodeIntent generate me a passcode
 GetPasscodeIntent generate me a passcode please
 GetPasscodeIntent generate me a pin
+GetPasscodeIntent generate me a pin code
+GetPasscodeIntent generate me a pin code please
 GetPasscodeIntent generate me a pin please
 GetPasscodeIntent get me a passcode
 GetPasscodeIntent get me a passcode please
 GetPasscodeIntent get me a pin
+GetPasscodeIntent get me a pin code
+GetPasscodeIntent get me a pin code please
 GetPasscodeIntent get me a pin please
 GetPasscodeIntent make me a passcode
 GetPasscodeIntent make me a passcode please
 GetPasscodeIntent make me a pin
+GetPasscodeIntent make me a pin code
+GetPasscodeIntent make me a pin code please
 GetPasscodeIntent make me a pin please
 GetPasscodeIntent passcode
 GetPasscodeIntent passcode please
 GetPasscodeIntent pin
+GetPasscodeIntent pin code
+GetPasscodeIntent pin code please
 GetPasscodeIntent pin please
+GetPasscodeIntent please for a passcode
+GetPasscodeIntent please for a passcode please
+GetPasscodeIntent please for a pin
+GetPasscodeIntent please for a pin code
+GetPasscodeIntent please for a pin code please
+GetPasscodeIntent please for a pin please
 GetPasscodeIntent please generate me a passcode
 GetPasscodeIntent please generate me a passcode please
 GetPasscodeIntent please generate me a pin
+GetPasscodeIntent please generate me a pin code
+GetPasscodeIntent please generate me a pin code please
 GetPasscodeIntent please generate me a pin please
 GetPasscodeIntent please get me a passcode
 GetPasscodeIntent please get me a passcode please
 GetPasscodeIntent please get me a pin
+GetPasscodeIntent please get me a pin code
+GetPasscodeIntent please get me a pin code please
 GetPasscodeIntent please get me a pin please
 GetPasscodeIntent please make me a passcode
 GetPasscodeIntent please make me a passcode please
 GetPasscodeIntent please make me a pin
+GetPasscodeIntent please make me a pin code
+GetPasscodeIntent please make me a pin code please
 GetPasscodeIntent please make me a pin please
 GetPasscodeIntent please what is my passcode
 GetPasscodeIntent please what is my passcode please
 GetPasscodeIntent please what is my pin
+GetPasscodeIntent please what is my pin code
+GetPasscodeIntent please what is my pin code please
 GetPasscodeIntent please what is my pin please
 GetPasscodeIntent please what's my passcode
 GetPasscodeIntent please what's my passcode please
 GetPasscodeIntent please what's my pin
+GetPasscodeIntent please what's my pin code
+GetPasscodeIntent please what's my pin code please
 GetPasscodeIntent please what's my pin please
 GetPasscodeIntent what is my passcode
 GetPasscodeIntent what is my passcode please
 GetPasscodeIntent what is my pin
+GetPasscodeIntent what is my pin code
+GetPasscodeIntent what is my pin code please
 GetPasscodeIntent what is my pin please
 GetPasscodeIntent what's my passcode
 GetPasscodeIntent what's my passcode please
 GetPasscodeIntent what's my pin
+GetPasscodeIntent what's my pin code
+GetPasscodeIntent what's my pin code please
 GetPasscodeIntent what's my pin please
 
 GetHighestBidIntent for the highest bid
