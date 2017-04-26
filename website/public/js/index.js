@@ -112,7 +112,7 @@ $(function () {
         $('#won-detail').text("Your credit card was processed.");
         var snd = new Audio("sounds/winner.wav"); // buffers automatically when created
             snd.play();
-            
+
         //set modal form values
         $('#receipt-date').text(new Date().toLocaleString());
         $('#receipt-merchantid').text(response.merchantId);
@@ -149,6 +149,8 @@ $(function () {
             $('#passcode-form').hide();
             $('#is-paired').attr('class', 'pair-yes')
             $('#sticky').show();
+            var snd = new Audio("sounds/wooHoo.wav"); // buffers automatically when created
+            snd.play();
         }).fail(function (jqXHR, textStatus, errorThrown) {
             console.log(jqXHR.responseText);
         });
