@@ -53,6 +53,8 @@ $(function () {
             $('#text-how').text('');
             $('#text-helper').text('highest bidder! :)');
             $('#btn-bid').hide();
+            var snd = new Audio("sounds/powerUp.wav"); // buffers automatically when created
+            snd.play();
             //page changes here
             //have view receipt button
             //opens modal, displays tripos raw response (for starters), and link to express dashboard
@@ -64,6 +66,8 @@ $(function () {
             $('#text-how').text('');
             $('#text-helper').text('bid again! :o');
             $('#btn-bid').show();
+            var snd = new Audio("sounds/wahWah.wav"); // buffers automatically when created
+            snd.play();
         }
     });
 
@@ -85,7 +89,6 @@ $(function () {
             document.body.style.backgroundColor = "#46B29D";
             $('#text-helper').text('winner!');
             // $('#won-detail').text("We have charged $" + msg.bid + " using triPOS to the card on file");
-            
         }
         else {
             //i lost!
@@ -107,7 +110,9 @@ $(function () {
         $('#receipt-btn').removeClass('disabled');
         $('#progress-bar').hide();
         $('#won-detail').text("Your credit card was processed.");
-
+        var snd = new Audio("sounds/winner.wav"); // buffers automatically when created
+            snd.play();
+            
         //set modal form values
         $('#receipt-date').text(new Date().toLocaleString());
         $('#receipt-merchantid').text(response.merchantId);
