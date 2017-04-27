@@ -43,9 +43,10 @@ $(function () {
         lastbid = msg;
         $('#bid-price').text("$" + msg.bid);
         $('#bid-history').show();
-        $('#bid-history').ready(function(){
-        $("ol").append($('<li><hr>').text("$" + msg.bid));
-    });
+        $('#bid-history').ready(function () {
+            $("ol").prepend($('<li>').text("$" + msg.bid));
+            $('#bid-history > ol > li').slice(5).remove();
+        });
 
         //check if either the socketid matches this session or that the clientid matches
         if ((msg.socketid && msg.socketid == socket.id) || (msg.clientid && msg.clientid == clientid)) {
@@ -116,7 +117,7 @@ $(function () {
         $('#progress-bar').hide();
         $('#won-detail').text("Your credit card was processed.");
         var snd = new Audio("sounds/winner.wav"); // buffers automatically when created
-            snd.play();
+        snd.play();
 
         //set modal form values
         $('#receipt-date').text(new Date().toLocaleString());
