@@ -16,3 +16,5 @@ GetPasscodeIntent (passcode/pin/pin code) (/please)
 
 GetHighestBidIntent (/please) (get me/what is/what's/whats/for) the (/highest) bid (/please)
 GetHighestBidIntent (am i winning/am i losing) (/please)
+
+WhatIsVauctionIntent (what is vauction/what's this all about/what are you/to explain yourself/to tell me who are you/who are you/who is vauction)

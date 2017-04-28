@@ -85,6 +85,8 @@ function onIntent(intentRequest, session, callback) {
         quitAuctionResponse(callback);
     } else if ("GetHighestBidIntent" === intentName) {
         highestBidResponse(session.user.userId, callback);
+    } else if ("WhatIsVauctionIntent") {
+        whatIsVauctionResponse(callback);
     } else {
         throw "Invalid intent";
     }
@@ -185,7 +187,7 @@ function highestBidResponse(sessionid, callback) {
         var shouldEndSession = true;
 
         if (result) {
-            if(message.clientid === sessionid)
+            if (message.clientid === sessionid)
                 speechOutput = "You're winning with the current bid of " + message.bid + " dollars.";
             else
                 speechOutput = "You're have lost the lead. The current bid is " + message.bid + " dollars.";
@@ -199,6 +201,22 @@ function highestBidResponse(sessionid, callback) {
             buildSpeechletResponse(cardTitle, titleOutput, speechOutput, repromptText, shouldEndSession));
 
     });
+}
+
+function whatIsVauctionResponse(callback) {
+    var sessionAttributes = {};
+    var repromptText = null;
+
+    var cardTitle = "What is Vauction";
+
+    var speechOutput = "Vauction is a highly evolved killing machine.";
+    var titleOutput = "";
+    var shouldEndSession = true;
+
+    titleOutput = speechOutput;
+
+    callback(sessionAttributes,
+        buildSpeechletResponse(cardTitle, titleOutput, speechOutput, repromptText, shouldEndSession));
 }
 
 function getPasscode(clientid, response) {

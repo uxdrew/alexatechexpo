@@ -77,6 +77,14 @@ GetPasscodeIntent what's my pin code
 GetPasscodeIntent what's my pin code please
 GetPasscodeIntent what's my pin please
 
+WhatIsVauctionIntent to explain yourself
+WhatIsVauctionIntent to tell me who are you
+WhatIsVauctionIntent what are you
+WhatIsVauctionIntent what is vauction
+WhatIsVauctionIntent what's this all about
+WhatIsVauctionIntent who are you
+WhatIsVauctionIntent who is vauction
+
 GetHighestBidIntent am i losing
 GetHighestBidIntent am i losing please
 GetHighestBidIntent am i winning
