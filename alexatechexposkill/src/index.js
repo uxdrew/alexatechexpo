@@ -203,15 +203,20 @@ function highestBidResponse(sessionid, callback) {
     });
 }
 
+var isKillingMachine = false;
 function whatIsVauctionResponse(callback) {
     var sessionAttributes = {};
     var repromptText = null;
 
     var cardTitle = "What is Vauction";
 
-    var speechOutput = "Vauction is a highly evolved killing machine.";
+    var speechOutput1 = "Vauction is a highly evolved killing machine.";
+    var speechOutput2 = "Vauction is a voice-first, auction skill, that allows customers. hey, that’s you. to experience commerce in a new intuitive way. Vauction today processes bids and sales through triPOS Cloud."
     var titleOutput = "";
     var shouldEndSession = true;
+
+    var speechOutput = isKillingMachine ? speechOutput1 : speechOutput2;
+    isKillingMachine = !isKillingMachine;
 
     titleOutput = speechOutput;
 
