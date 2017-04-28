@@ -13,3 +13,6 @@ MakeBidIntent (/to) (/please) (make a/make me a/place a/place me a/put in a) (bi
 
 GetPasscodeIntent (/please) (get me a/generate me a/make me a/what's my/what is my/for a) (passcode/pin/pin code) (/please)
 GetPasscodeIntent (passcode/pin/pin code) (/please)
+
+GetHighestBidIntent (/please) (get me/what is/what's/whats/for) the (/highest) bid (/please)
+GetHighestBidIntent (am i winning/am i losing) (/please)

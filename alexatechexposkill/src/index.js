@@ -83,11 +83,12 @@ function onIntent(intentRequest, session, callback) {
         makeBidResponse(session.user.userId, intentRequest.intent, callback);
     } else if ("EndAuctionIntent" === intentName) {
         quitAuctionResponse(callback);
+    } else if ("GetHighestBidIntent" === intentName) {
+        highestBidResponse(session.user.userId, callback);
     } else {
         throw "Invalid intent";
     }
 }
-
 
 /**
  * Called when the user ends the session.
@@ -171,24 +172,34 @@ function quitAuctionResponse(callback) {
     });
 }
 
-// function testGet(response) {
+function highestBidResponse(sessionid, callback) {
+    var sessionAttributes = {};
+    var repromptText = null;
 
-//     var http = require('http');
-//     var options = {
-//         host: 'www.bing.com',
-//         port: 80,
-//         path: '/',
-//         agent: false
-//     };
+    var cardTitle = "Highest Bid";
 
-//     http.get(options, function (res) {
-//         console.log("Response: " + res.statusCode);
-//         response(res.statusCode);
-//     }).on('error', function (e) {
-//         console.log("Error message: " + e.message);
-//     });
+    highestBid(function (result, message) {
 
-// }
+        var speechOutput = "";
+        var titleOutput = "";
+        var shouldEndSession = true;
+
+        if (result) {
+            if(message.clientid === sessionid)
+                speechOutput = "You're winning with the current bid of " + message.bid + " dollars.";
+            else
+                speechOutput = "You're have lost the lead. The current bid is " + message.bid + " dollars.";
+        } else {
+            speechOutput = "Sorry, couldn't get the current bid.";
+        }
+
+        titleOutput = speechOutput;
+
+        callback(sessionAttributes,
+            buildSpeechletResponse(cardTitle, titleOutput, speechOutput, repromptText, shouldEndSession));
+
+    });
+}
 
 function getPasscode(clientid, response) {
     var http = require("http");
@@ -282,6 +293,39 @@ function quitAuction(response) {
         });
     });
 
+    req.end();
+}
+
+function highestBid(response) {
+    var http = require("http");
+
+    var options = {
+        "method": "GET",
+        "hostname": "vauctiontechexpo-dev.us-east-1.elasticbeanstalk.com",
+        "port": "80",
+        "path": "/api/bid/",
+        "headers": {
+            "content-type": "application/json",
+            "cache-control": "no-cache"
+        }
+    };
+
+    var req = http.request(options, function (res) {
+        var chunks = [];
+
+        res.on("data", function (chunk) {
+            chunks.push(chunk);
+        });
+
+        res.on("end", function () {
+            var body = Buffer.concat(chunks);
+            console.log(body.toString());
+            var bodyJson = JSON.parse(body);
+            response(true, bodyJson);
+        });
+    });
+
+    req.write(JSON.stringify({ bid: 202, socketid: 'null', clientid: 'testclientid' }));
     req.end();
 }
 

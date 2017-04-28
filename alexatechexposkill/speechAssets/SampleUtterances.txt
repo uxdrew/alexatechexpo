@@ -77,12 +77,50 @@ GetPasscodeIntent what's my pin code
 GetPasscodeIntent what's my pin code please
 GetPasscodeIntent what's my pin please
 
+GetHighestBidIntent am i losing
+GetHighestBidIntent am i losing please
+GetHighestBidIntent am i winning
+GetHighestBidIntent am i winning please
+GetHighestBidIntent for the bid
+GetHighestBidIntent for the bid please
 GetHighestBidIntent for the highest bid
-GetHighestBidIntent for the current bid
-GetHighestBidIntent what's the highest bid
+GetHighestBidIntent for the highest bid please
+GetHighestBidIntent get me the bid
+GetHighestBidIntent get me the bid please
+GetHighestBidIntent get me the highest bid
+GetHighestBidIntent get me the highest bid please
+GetHighestBidIntent please for the bid
+GetHighestBidIntent please for the bid please
+GetHighestBidIntent please for the highest bid
+GetHighestBidIntent please for the highest bid please
+GetHighestBidIntent please get me the bid
+GetHighestBidIntent please get me the bid please
+GetHighestBidIntent please get me the highest bid
+GetHighestBidIntent please get me the highest bid please
+GetHighestBidIntent please what is the bid
+GetHighestBidIntent please what is the bid please
+GetHighestBidIntent please what is the highest bid
+GetHighestBidIntent please what is the highest bid please
+GetHighestBidIntent please what's the bid
+GetHighestBidIntent please what's the bid please
+GetHighestBidIntent please what's the highest bid
+GetHighestBidIntent please what's the highest bid please
+GetHighestBidIntent please whats the bid
+GetHighestBidIntent please whats the bid please
+GetHighestBidIntent please whats the highest bid
+GetHighestBidIntent please whats the highest bid please
+GetHighestBidIntent what is the bid
+GetHighestBidIntent what is the bid please
+GetHighestBidIntent what is the highest bid
+GetHighestBidIntent what is the highest bid please
 GetHighestBidIntent what's the bid
-GetHighestBidIntent to get the highest bid
-GetHighestBidIntent to get the bid
+GetHighestBidIntent what's the bid please
+GetHighestBidIntent what's the highest bid
+GetHighestBidIntent what's the highest bid please
+GetHighestBidIntent whats the bid
+GetHighestBidIntent whats the bid please
+GetHighestBidIntent whats the highest bid
+GetHighestBidIntent whats the highest bid please
 
 MakeBidIntent bed {Bid}
 MakeBidIntent bed {Bid} buck
