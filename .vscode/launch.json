@@ -15,7 +15,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceRoot}\\website\\app.js"
+            "program": "${workspaceRoot}//website//app.js"
         },
         {
             "type": "node",
