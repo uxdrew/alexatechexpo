@@ -15,7 +15,7 @@ module = module.exports = function (vsocketio, alexapasscodes) {
 
             //alexa will sometimes pass a comma in the amount which parseInt doesn't like
             if(typeof bid.bid === "string")
-                bid.bid = bid.bid.replace(/,/g, '');
+                bid.bid = bid.bid.replace(/,/g, '').replace(/\s/g, '');
             if (parseInt(bid.bid) > parseInt(highestBid.bid)) {
                 highestBid = bid;
                 vsocketio.EmitNewBid(highestBid);
@@ -48,7 +48,6 @@ module = module.exports = function (vsocketio, alexapasscodes) {
                 "hostname": "triposcert.vantiv.com",
                 "port": null,
                 "path": "/api/v1/sale",
-                //"protocol": "https:",
                 "headers": {
                     "content-type": "application/json",
                     "content-length": Buffer.byteLength(postData),
