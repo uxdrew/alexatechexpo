@@ -5,7 +5,7 @@ $(function () {
     $('#bid-form').submit(function () {
         //console.log(socket.id);
         var bid = {
-            bid: parseFloat($('#bid-text').val()),
+            bid: parseFloat($('#bid-text').val().replace(/,/g, "")),
             clientid: null,
             socketid: socket.id
         };

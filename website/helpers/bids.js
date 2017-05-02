@@ -13,6 +13,9 @@ module = module.exports = function (vsocketio, alexapasscodes) {
                 bid.socketid = alexapasscodes.GetSocketId(bid.clientid);
             }
 
+            //alexa will sometimes pass a comma in the amount which parseInt doesn't like
+            if(typeof bid.bid === "string")
+                bid.bid = bid.bid.replace(/,/g, '');
             if (parseInt(bid.bid) > parseInt(highestBid.bid)) {
                 highestBid = bid;
                 vsocketio.EmitNewBid(highestBid);
