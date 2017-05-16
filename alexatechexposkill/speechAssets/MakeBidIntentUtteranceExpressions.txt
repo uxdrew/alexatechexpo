@@ -7,14 +7,14 @@ MakeBidIntent
 
 http://www.makermusings.com/amazon-echo-utterance-expander/
 
-MakeBidIntent (/to) (/please) (bid/bit/bed) {Bid} (/dollar/dollars/buck/bucks) (/please)
-MakeBidIntent (/to) (/please) (make a/make me a/place a/place me a/put in a) {Bid} (dollar/dollars/buck/bucks) (bid/bit/bed) (/please)
-MakeBidIntent (/to) (/please) (make a/make me a/place a/place me a/put in a) (bid/bit/bed) (of/for) {Bid} (dollar/dollars/buck/bucks) (/please)
+MakeBidIntent (/to) (/please) (bid/bit/bed/big) {Bid} (/dollar/dollars/buck/bucks) (/please)
+MakeBidIntent (/to) (/please) (make a/make me a/place a/place me a/put in a) {Bid} (dollar/dollars/buck/bucks) (bid/bit/bed/big) (/please)
+MakeBidIntent (/to) (/please) (make a/make me a/place a/place me a/put in a) (bid/bit/bed/big) (of/for) {Bid} (dollar/dollars/buck/bucks) (/please)
 
 GetPasscodeIntent (/please) (get me a/generate me a/make me a/what's my/what is my/for a) (passcode/pin/pin code) (/please)
 GetPasscodeIntent (passcode/pin/pin code) (/please)
 
 GetHighestBidIntent (/please) (get me/what is/what's/whats/for) the (/highest) bid (/please)
-GetHighestBidIntent (am i winning/am i losing) (/please)
+GetHighestBidIntent (who is winning/am i winning/am i losing) (/please)
 
 WhatIsVauctionIntent (what is vauction/what's this all about/what are you/to explain yourself/to tell me who are you/who are you/who is vauction)
