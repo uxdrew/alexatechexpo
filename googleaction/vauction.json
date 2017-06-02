@@ -1,0 +1,45 @@
+{
+  "actions": [
+    {
+      "description": "Default Welcome Intent",
+      "name": "MAIN",
+      "fulfillment": {
+        "conversationName": "vauction"
+      },
+      "intent": {
+        "name": "actions.intent.MAIN",
+        "trigger": {
+          "queryPatterns": [
+            "talk to vauction"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET_PASSCODE",
+      "intent": {
+        "name": "com.example.vauction.GET_PASSCODE",
+        "trigger": {
+          "queryPatterns": [
+            "get me a passcode",
+            "generate a passcode",
+            "make me a passcode"
+          ]
+        }
+      },
+      "fulfillment": {
+        "conversationName": "getPasscode"
+      }
+    }
+  ],
+  "conversations": {
+    "vauction": {
+      "name": "vauction",
+      "url": "https://8acc0f76.ngrok.io/vauction/us-central1/vauction"
+    },
+    "getPasscode": {
+      "name": "getPasscode",
+      "url": "https://8acc0f76.ngrok.io/vauction/us-central1/vauction"
+    }
+  }
+}
