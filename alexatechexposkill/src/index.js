@@ -15,6 +15,7 @@ exports.handler = function (event, context) {
          * Uncomment this if statement and populate with your skill's application ID to
          * prevent someone else from configuring a skill that sends requests to this function.
          */
+        // *** Please change this to your application ID from AWS ***
         if (event.session.application.applicationId !== "amzn1.ask.skill.2767985b-1e37-48c0-a13e-f4aead039ec6") {
             context.fail("Invalid Application ID");
         }
@@ -229,7 +230,7 @@ function getPasscode(clientid, response) {
 
     var options = {
         "method": "PATCH",
-        "hostname": "vauctiontechexpo-dev.us-east-1.elasticbeanstalk.com",
+        "hostname": "<enter your host name here>",
         "port": "80",
         "path": "/api/passcode/" + encodeURIComponent(clientid),
         "headers": {
@@ -260,7 +261,7 @@ function makeBid(clientid, bid, response) {
 
     var options = {
         "method": "PUT",
-        "hostname": "vauctiontechexpo-dev.us-east-1.elasticbeanstalk.com",
+        "hostname": "<enter your host name here>",
         "port": "80",
         "path": "/api/bid/",
         "headers": {
@@ -293,7 +294,7 @@ function quitAuction(response) {
 
     var options = {
         "method": "DELETE",
-        "hostname": "vauctiontechexpo-dev.us-east-1.elasticbeanstalk.com",
+        "hostname": "<enter your host name here>",
         "port": "80",
         "path": "/api/bid/",
         "headers": {
@@ -324,7 +325,7 @@ function highestBid(response) {
 
     var options = {
         "method": "GET",
-        "hostname": "vauctiontechexpo-dev.us-east-1.elasticbeanstalk.com",
+        "hostname": "<enter your host name here>",
         "port": "80",
         "path": "/api/bid/",
         "headers": {

@@ -56,9 +56,10 @@ module = module.exports = function (vsocketio, alexapasscodes) {
                     "tp-application-version": "1.0.0",
                     "tp-authorization": "2.0",
                     "accept": "application/json",
-                    "tp-express-acceptor-id": "3928907",
-                    "tp-express-account-id": "1044148",
-                    "tp-express-account-token": "CB09050E334215EC64619FC2FED4D0C70CF00F72917D0F6A69E3342FDA5B7DC69D8F0801",
+                    // http://www.elementps.com/Create-a-Test-Account
+                    "tp-express-acceptor-id": "<enter express acceptor id here>",
+                    "tp-express-account-id": "<enter express account id here>",
+                    "tp-express-account-token": "<enter express account token here>",
                     "tp-request-id": uuid,
                     "cache-control": "no-cache"
                 }
